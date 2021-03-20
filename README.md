@@ -3,21 +3,21 @@ A rhythmic bullet hell game written in Java (based from the tutorial and game Wa
 \
 [CUBESHOTS PORTABLE](https://github.com/GDjkhp/CUBESHOTS_PORTABLE) (for Android and HTML)\
 \
-![image 1](https://github.com/GDjkhp/CUBESHOTS/blob/master/readme%20pics/1%20attempt%20storm.PNG)\
+![image 1](https://github.com/GDjkhp/CUBESHOTS/blob/main/readme%20pics/1%20attempt%20storm.PNG)\
 \
-![image 2](https://github.com/GDjkhp/CUBESHOTS/blob/master/readme%20pics/game%20showcase%202.jpg)\
+![image 2](https://github.com/GDjkhp/CUBESHOTS/blob/main/readme%20pics/game%20showcase%202.jpg)\
 \
-![image 3](https://github.com/GDjkhp/CUBESHOTS/blob/master/readme%20pics/game_%20showcase.jpg)\
+![image 3](https://github.com/GDjkhp/CUBESHOTS/blob/main/readme%20pics/game_%20showcase.jpg)\
 \
-![image 4](https://github.com/GDjkhp/CUBESHOTS/blob/master/readme%20pics/conway.PNG)\
+![image 4](https://github.com/GDjkhp/CUBESHOTS/blob/main/readme%20pics/conway.PNG)\
 \
-![image 5](https://github.com/GDjkhp/CUBESHOTS/blob/master/readme%20pics/path.PNG)\
+![image 5](https://github.com/GDjkhp/CUBESHOTS/blob/main/readme%20pics/path.PNG)\
 \
-![image 6](https://github.com/GDjkhp/CUBESHOTS/blob/master/readme%20pics/tictactoe.PNG)\
+![image 6](https://github.com/GDjkhp/CUBESHOTS/blob/main/readme%20pics/tictactoe.PNG)\
 \
-![image 7](https://github.com/GDjkhp/CUBESHOTS/blob/master/readme%20pics/water.PNG)\
+![image 7](https://github.com/GDjkhp/CUBESHOTS/blob/main/readme%20pics/water.PNG)\
 \
-![image 8](https://github.com/GDjkhp/CUBESHOTS/blob/master/readme%20pics/render%20texture.png)
+![image 8](https://github.com/GDjkhp/CUBESHOTS/blob/main/readme%20pics/render%20texture.png)
 # Libraries
 Java 11: https://www.oracle.com/ph/java/technologies/javase-jdk11-downloads.html/
 \
@@ -40,10 +40,10 @@ You need JarSplice to compile the code (sorry i'm so lazy), so follow the instru
 6. Create Fat Jar.
 7. Copy [resources_](https://github.com/GDjkhp/CUBESHOTS_RESOURCES/) folder to the same directory of the created fat jar.
 # Installation (for non-programmers)
-Download the [resources_](https://github.com/GDjkhp/CUBESHOTS_RESOURCES/) folder (use the "download as zip" option) for the resources, and the latest release (the fat jar, located at [bin](https://github.com/GDjkhp/CUBESHOTS/tree/master/bin)).\
+Download the [resources_](https://github.com/GDjkhp/CUBESHOTS_RESOURCES/) folder (use the "download as zip" option) for the resources, and the latest release (the fat jar, located at [bin](https://github.com/GDjkhp/CUBESHOTS/tree/main/bin)).\
 \
 Edit: Must be in this directory structure:\
-![add_dir](https://github.com/GDjkhp/CUBESHOTS/blob/master/readme%20pics/dir.png)
+![add_dir](https://github.com/GDjkhp/CUBESHOTS/blob/main/readme%20pics/dir.png)
 # FAQs
 1. Mobile when?\
 A: soon >:)
