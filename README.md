@@ -17,7 +17,13 @@ A rhythmic bullet hell game written in Java (based from the tutorial and game Wa
 \
 ![image 7](https://github.com/GDjkhp/CUBESHOTS/blob/main/readme%20pics/water.PNG)\
 \
-![image 8](https://github.com/GDjkhp/CUBESHOTS/blob/main/readme%20pics/render%20texture.png)
+![image 8](https://github.com/GDjkhp/CUBESHOTS/blob/main/readme%20pics/render%20texture.png)\
+\
+![image 9](https://github.com/GDjkhp/CUBESHOTS/blob/main/readme%20pics/mandelbrot.png)\
+\
+![image 10](https://github.com/GDjkhp/CUBESHOTS/blob/main/readme%20pics/maze.png)\
+\
+![image 11](https://github.com/GDjkhp/CUBESHOTS/blob/main/readme%20pics/julia.png)
 # Libraries
 Java 11: https://www.oracle.com/ph/java/technologies/javase-jdk11-downloads.html/
 \
