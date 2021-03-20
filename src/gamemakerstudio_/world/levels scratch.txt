@@ -1,0 +1,2200 @@
+if (levelid == 25) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 26) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 27) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 28) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 29) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 30) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 31) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 32) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 33) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 34) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 35) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 36) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 37) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 38) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 39) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 40) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 41) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 42) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 43) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 44) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 45) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 46) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 47) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 48) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 49) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 50) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 51) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 52) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 53) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 54) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 55) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 56) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 57) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 58) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 59) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 60) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 61) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 62) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 63) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 64) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 65) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 66) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 67) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 68) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 69) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 70) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 71) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 72) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 73) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 74) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 75) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 76) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 77) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 78) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 79) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 80) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 81) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 82) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 83) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 84) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 85) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 86) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 87) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 88) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 89) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 90) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 91) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 92) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 93) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 94) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 95) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 96) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 97) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 98) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 99) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 100) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 101) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 102) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 103) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 104) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 105) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 106) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 107) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 108) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 109) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 110) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 111) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 112) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 113) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 114) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 115) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 116) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 117) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 118) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 119) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 120) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 121) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 122) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 123) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }
+            if (levelid == 124) {
+                // spawn code
+                scoreKeep++;
+                scoreKeepStep++;
+                if (scoreKeep >= tpm) {
+                    if (metronome) handler.metronomeCode();
+                    difference = scoreKeep - tpm;
+                    scoreKeep = difference;
+                    handler.addObject(new heart_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.HeartFriend, handler, 0, 0, 0));
+                    handler.addObject(new basecircle_(r.nextInt(game_.WIDTH - 10), r.nextInt(game_.HEIGHT - 10),
+                            ID.BaseCircle, handler, 0, 0, 0));
+                }
+                // steps
+                if (scoreKeepStep >= spm) {
+                    handler.stepsBeta();
+                    stepDifference = scoreKeepStep - spm;
+                    scoreKeepStep = stepDifference;
+                }
+                // end code
+                endCode();
+            }

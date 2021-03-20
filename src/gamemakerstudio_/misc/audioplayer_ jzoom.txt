@@ -1,0 +1,882 @@
+else {
+                switch (key) {
+                    case "dead_meme":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/dead meme.ogg"));
+                        break;
+                    case "dead_meme_2":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/dead meme 2.ogg"));
+                        break;
+                    case "eschew":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/eschew.ogg"));
+                        break;
+                    case "rock_the_house":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/rock the house.ogg"));
+                        break;
+                    case "end_of_time":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/end of time.ogg"));
+                        break;
+                    case "nova_music":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/nova music.ogg"));
+                        break;
+                    case "time_leaper":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/time leaper.ogg"));
+                        break;
+                    case "gg":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/gg.ogg"));
+                        break;
+                    case "namice1":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/namice1.ogg"));
+                        break;
+                    case "namice2":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/namice2.ogg"));
+                        break;
+                    case "namice3":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/namice3.ogg"));
+                        break;
+                    case "there":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/there.ogg"));
+                        break;
+                    case "fisher_price":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/fisher price.ogg"));
+                        break;
+                    case "dance_violins":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/dance violins.ogg"));
+                        break;
+                    // new
+                    case "aether":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/aether.ogg"));
+                        break;
+                    case "clickbait":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/clickbait.ogg"));
+                        break;
+                    case "debug":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/debug.ogg"));
+                        break;
+                    case "iy":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/iy.ogg"));
+                        break;
+                    case "ye":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/ye.ogg"));
+                        break;
+                    case "mocha":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/mocha.ogg"));
+                        break;
+                    case "everything_falls":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/everything falls.ogg"));
+                        break;
+                    case "lonely_forest":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/lonely forest.ogg"));
+                        break;
+                    case "saxophone":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/saxophone.ogg"));
+                        break;
+                    case "overcharge":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/overcharge.ogg"));
+                        break;
+                    case "flavored_ice":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/flavored ice.ogg"));
+                        break;
+                    case "shape_of_the_sun":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/shape of the sun.ogg"));
+                        break;
+                    case "angels":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/angels.ogg"));
+                        break;
+                    case "perseverance":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/perseverance.ogg"));
+                        break;
+                    case "dynasty":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/dynasty.ogg"));
+                        break;
+                    case "bloom":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/bloom.ogg"));
+                        break;
+                    case "canyon":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/canyon.ogg"));
+                        break;
+                    case "overcloud":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/overcloud.ogg"));
+                        break;
+                    case "ppaper_pplanes":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/ppaper pplanes.ogg"));
+                        break;
+                    case "prelude":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/prelude.ogg"));
+                        break;
+                    case "spirit":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/spirit.ogg"));
+                        break;
+                    case "catalyze":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/catalyze.ogg"));
+                        break;
+                    case "stray":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/stray.ogg"));
+                        break;
+                    case "jazz":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/jazz.ogg"));
+                        break;
+                    // the time i started to think about my existence
+                    case "success":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/success.ogg"));
+                        break;
+                    case "supernova":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/supernova.ogg"));
+                        break;
+                    case "time":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/time.ogg"));
+                        break;
+                    case "marbl":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/marbl.ogg"));
+                        break;
+                    case "dreamer":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/dreamer.ogg"));
+                        break;
+                    case "ghost_house":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/ghost house.ogg"));
+                        break;
+                    case "jude":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/jude.ogg"));
+                        break;
+                    case "don't_hold_back":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/don't hold back.ogg"));
+                        break;
+                    case "ouais_ouais":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/ouais ouais.ogg"));
+                        break;
+                    case "things_that_you_do":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/things that you do.ogg"));
+                        break;
+                    case "sad_summer":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/sad summer.ogg"));
+                        break;
+                    case "wishing":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/wishing.ogg"));
+                        break;
+                    case "popo":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/popo.ogg"));
+                        break;
+                    case "ocean_biome":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/ocean biome.ogg"));
+                        break;
+                    case "snowcone":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/snowcone.ogg"));
+                        break;
+                    case "sawdust_angels":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/sawdust angels.ogg"));
+                        break;
+                    case "sky_high":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/sky high.ogg"));
+                        break;
+                    case "my_heart":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/my heart.ogg"));
+                        break;
+                    case "nekozilla":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/nekozilla.ogg"));
+                        break;
+                    case "cloud_9":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/cloud 9.ogg"));
+                        break;
+                    case "sunburst":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/sunburst.ogg"));
+                        break;
+                    case "hellcat":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/hellcat.ogg"));
+                        break;
+                    case "denise":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/denise 102.42.ogg"));
+                        break;
+                    case "dollar_needles_1":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/dollar needles 1.ogg"));
+                        break;
+                    case "dollar_needles_3":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/dollar needles 3.ogg"));
+                        break;
+                    case "behind_these_closed_doors":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/behind these closed doors.ogg"));
+                        break;
+                    case "otis_mcmusic":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/otis mcmusic.ogg"));
+                        break;
+                    case "not_for_nothing":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/not for nothing 86.40.ogg"));
+                        break;
+                    case "mind_control":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/mind control 129.46.ogg"));
+                        break;
+                    case "memories":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/memories.ogg"));
+                        break;
+                    case "2011":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/2011 102.10.ogg"));
+                        break;
+                    case "10000":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/10000.ogg"));
+                        break;
+                    case "merry_christmas":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/merry christmas.ogg"));
+                        break;
+                    case "crab_rave":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/crab rave.ogg"));
+                        break;
+                    case "insurgent":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/insurgent.ogg"));
+                        break;
+                    case "late_night_lo-fi":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/late night lo-fi.ogg"));
+                        break;
+                    case "holystone":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/holystone.ogg"));
+                        break;
+                    case "lith_harbor":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/lith harbor.ogg"));
+                        break;
+                    case "lost_in_thought":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/lost in thought.ogg"));
+                        break;
+                    case "pounce":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/pounce.ogg"));
+                        break;
+                    case "dick":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/dick.ogg"));
+                        break;
+                    case "golden_haze":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/golden haze.ogg"));
+                        break;
+                    case "grim_reaper":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/grim reaper.ogg"));
+                        break;
+                    case "highscore":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/highscore.ogg"));
+                        break;
+                    case "purity":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/purity.ogg"));
+                        break;
+                    case "yellow_orange":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/yellow orange.ogg"));
+                        break;
+                    case "surface":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/surface.ogg"));
+                        break;
+                    case "nokia_arabic":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/nokia arabic.ogg"));
+                        break;
+                    case "nrg_drink":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/nrg drink.ogg"));
+                        break;
+                    case "happy":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/happy.ogg"));
+                        break;
+                    case "moonsugar":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/moonsugar.ogg"));
+                        break;
+                    case "rubik":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/rubik.ogg"));
+                        break;
+                    case "ignition":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/ignition.ogg"));
+                        break;
+                    case "the_force":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/the force.ogg"));
+                        break;
+                    case "candyland":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/candyland.ogg"));
+                        break;
+                    case "infectious":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/infectious.ogg"));
+                        break;
+                    case "crazy":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/crazy.ogg"));
+                        break;
+                    case "race":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/race.ogg"));
+                        break;
+                    case "ice_flow":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/ice flow.ogg"));
+                        break;
+                    case "kalimba":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/kalimba 119.70.ogg"));
+                        break;
+                    case "party":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/party.ogg"));
+                        break;
+                    case "bass":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/bass.ogg"));
+                        break;
+                    case "hazmat":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/hazmat.ogg"));
+                        break;
+                    case "panda_dance":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/panda dance.ogg"));
+                        break;
+                    case "get_up":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/get up.ogg"));
+                        break;
+                    case "river":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/river.ogg"));
+                        break;
+                    case "follow":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/follow.ogg"));
+                        break;
+                    case "slime":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/slime.ogg"));
+                        break;
+                    case "euphoria":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/euphoria.ogg"));
+                        break;
+                    case "nautilus":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/nautilus.ogg"));
+                        break;
+                    case "liaquo":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/lia quo.ogg"));
+                        break;
+                    case "crazy_frog":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/crazy frog.ogg"));
+                        break;
+                    case "never_lose_hope":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/never lose hope.ogg"));
+                        break;
+                    case "skystrike":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/skystrike.ogg"));
+                        break;
+                    case "starchaser":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/starchaser.ogg"));
+                        break;
+                    case "a_newer_dawn":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/a newer dawn.ogg"));
+                        break;
+                    case "monody":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/monody.ogg"));
+                        break;
+                    case "unity":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/unity.ogg"));
+                        break;
+                    case "xenogenesis":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/xenogenesis.ogg"));
+                        break;
+                    case "time_stops":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/time stops.ogg"));
+                        break;
+                    case "badland":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/badland.ogg"));
+                        break;
+                    case "challenger":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/challenger.ogg"));
+                        break;
+                    case "bluemoon":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/bluemoon 112.50.ogg"));
+                        break;
+                    case "cherry_blossoms":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/cherry blossoms.ogg"));
+                        break;
+                    case "walkman":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/walkman.ogg"));
+                        break;
+                    case "beyond_the_walls":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/beyond the walls.ogg"));
+                        break;
+                    case "april":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/april.ogg"));
+                        break;
+                    case "sunlight":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/sunlight.ogg"));
+                        break;
+                    case "cyptik_dance":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/cryptik dance.ogg"));
+                        break;
+                    case "leaving_leafwood_forest":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/leaving leafwood forest.ogg"));
+                        break;
+                    case "troglodyte":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/troglodyte.ogg"));
+                        break;
+                    case "mayo":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/mayo.ogg"));
+                        break;
+                    case "starship_showdown":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/starship showdown.ogg"));
+                        break;
+                    case "kumquat":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/kumquat.ogg"));
+                        break;
+                    case "jaclyn":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/jaclyn.ogg"));
+                        break;
+                    case "jacques":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/jacques.ogg"));
+                        break;
+                    case "liftoff":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/liftoff.ogg"));
+                        break;
+                    case "never_be_alone":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/never be alone.ogg"));
+                        break;
+                    case "solitude":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/solitude.ogg"));
+                        break;
+                    case "close_to_the_sun":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/close to the sun.ogg"));
+                        break;
+                    case "nanamori":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/nanamori.ogg"));
+                        break;
+                    case "fury":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/fury.ogg"));
+                        break;
+                    case "desu_ka":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/desu ka.ogg"));
+                        break;
+                    case "voices":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/voices.ogg"));
+                        break;
+                    case "dancing":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/dancing.ogg"));
+                        break;
+                    case "shining_space":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/shining space.ogg"));
+                        break;
+                    case "space_invaders":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/space invaders.ogg"));
+                        break;
+                    case "drippy_dub":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/drippy dub.ogg"));
+                        break;
+                    case "fake_princess":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/fake princess.ogg"));
+                        break;
+                    case "lazergun":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/lazergun.ogg"));
+                        break;
+                    case "afterimage":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/afterimage.ogg"));
+                        break;
+                    case "star_wars_remix":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/star wars remix.ogg"));
+                        break;
+                    case "kiss_me_kiss_you":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/kiss me kiss you.ogg"));
+                        break;
+                    case "enigma":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/enigma.ogg"));
+                        break;
+                    case "never_make_it":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/never make it.ogg"));
+                        break;
+                    case "flight":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/flight.ogg"));
+                        break;
+                    case "journey":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/journey.ogg"));
+                        break;
+                    case "lonley_forest":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/lonley forest.ogg"));
+                        break;
+                    case "pirate":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/pirate.ogg"));
+                        break;
+                    case "aquamarine":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/aquamarine.ogg"));
+                        break;
+                    case "boombox":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/boombox.ogg"));
+                        break;
+                    case "niconico_dreams":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/niconico dreams.ogg"));
+                        break;
+                    case "requiem_dream":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/requiem dream.ogg"));
+                        break;
+                    case "eurodancer":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/eurodancer.ogg"));
+                        break;
+                    case "hello":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/hello.ogg"));
+                        break;
+                    case "mayday":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/mayday.ogg"));
+                        break;
+                    case "fireflies_remix":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/fireflies remix.ogg"));
+                        break;
+                    case "echolands":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/echolands.ogg"));
+                        break;
+                    case "voiceless":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/voiceless.ogg"));
+                        break;
+                    case "vaporwave_aesthetics":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/vaporwave aesthetics.ogg"));
+                        break;
+                    case "happy_troll":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/happy troll.ogg"));
+                        break;
+                    case "dimension":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/dimension.ogg"));
+                        break;
+                    case "crystal_caves":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/crystal caves.ogg"));
+                        break;
+                    case "elevate":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/elevate.ogg"));
+                        break;
+                    case "okiba":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/okiba.ogg"));
+                        break;
+                    case "falling_mysts":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/falling mysts.ogg"));
+                        break;
+                    case "newgrounds_return":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/newgrounds return.ogg"));
+                        break;
+                    case "body_jammer":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/body jammer.ogg"));
+                        break;
+                    case "flirt":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/flirt.ogg"));
+                        break;
+                    case "retry":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/retry.ogg"));
+                        break;
+                    case "jet_set":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/jet set.ogg"));
+                        break;
+                    case "the_calling":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/the calling.ogg"));
+                        break;
+                    case "tria":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/tria.ogg"));
+                        break;
+                    case "endgame":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/endgame.ogg"));
+                        break;
+                    case "night_out":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/night out.ogg"));
+                        break;
+                    case "april_showers":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/april showers.ogg"));
+                        break;
+                    case "bathtub":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/bathtub.ogg"));
+                        break;
+                    case "laszlo":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/laszlo.ogg"));
+                        break;
+                    case "force":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/force.ogg"));
+                        break;
+                    case "spectre":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/spectre.ogg"));
+                        break;
+                    case "fade":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/fade.ogg"));
+                        break;
+                    case "bangarang":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/bangarang.ogg"));
+                        break;
+                    case "bun_dem":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/bun dem.ogg"));
+                        break;
+                    case "sleepyhead":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/sleepyhead.ogg"));
+                        break;
+                    case "dance_till_you're_dead":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/dance till you're dead.ogg"));
+                        break;
+                    case "animals":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/animals.ogg"));
+                        break;
+                    case "yeah":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/yeah.ogg"));
+                        break;
+                    case "november":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/november.ogg"));
+                        break;
+                    case "florescence":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/florescence.ogg"));
+                        break;
+                    case "mantis_shrimp_showdown":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/mantis shrimp showdown.ogg"));
+                        break;
+                    case "holy_war":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/holy war.ogg"));
+                        break;
+                    case "massacre":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/massacre.ogg"));
+                        break;
+                    case "believe":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/believe.ogg"));
+                        break;
+                    case "karma":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/karma.ogg"));
+                        break;
+                    case "refraction":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/refraction.ogg"));
+                        break;
+                    case "glome":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/glome.ogg"));
+                        break;
+                    case "red_roses":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/red roses.ogg"));
+                        break;
+                    case "a_little_older":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/a little older.ogg"));
+                        break;
+                    case "when_time_tears":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/when time tears.ogg"));
+                        break;
+                    case "hold_on_to_me":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/hold on to me.ogg"));
+                        break;
+                    case "i'm_still_alive":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/i'm still alive.ogg"));
+                        break;
+                    case "nirmiti":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/nirmiti.ogg"));
+                        break;
+                    case "avast_your_ass":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/avast your ass.ogg"));
+                        break;
+                    case "soulwind":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/soulwind.ogg"));
+                        break;
+                    case "zenith":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/zenith.ogg"));
+                        break;
+                    case "portals":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/portals.ogg"));
+                        break;
+                    case "mellow":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/mellow.ogg"));
+                        break;
+                    case "lullaby_remix":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/lullaby remix.ogg"));
+                        break;
+                    case "florescentia":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/florescentia.ogg"));
+                        break;
+                    case "bioluminescent":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/bioluminescent.ogg"));
+                        break;
+                    case "let's_bounce":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/let's bounce.ogg"));
+                        break;
+                    case "orbit":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/orbit.ogg"));
+                        break;
+                    case "luminous":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/luminous.ogg"));
+                        break;
+                    case "mako":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/mako.ogg"));
+                        break;
+                    case "love_talk":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/love talk.ogg"));
+                        break;
+                    case "trouble":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/trouble.ogg"));
+                        break;
+                    case "peepee":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/peepee.ogg"));
+                        break;
+                    case "rose":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/rose.ogg"));
+                        break;
+                    case "fateful_mist":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/fateful mist.ogg"));
+                        break;
+                    case "flashyizz_crazy":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/flashyizz crazy.ogg"));
+                        break;
+                    case "glorious_morning":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/glorious morning.ogg"));
+                        break;
+                    case "flyboy_and_gabbergirl":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/flyboy and gabbergirl.ogg"));
+                        break;
+                    case "battletown":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/battletown.ogg"));
+                        break;
+                    case "nanobyte":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/nanobyte.ogg"));
+                        break;
+                    case "fantasy":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/fantasy.ogg"));
+                        break;
+                    case "artificial":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/artificial.ogg"));
+                        break;
+                    case "run_away":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/run away.ogg"));
+                        break;
+                    case "dream":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/dream.ogg"));
+                        break;
+                    case "drained":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/drained.ogg"));
+                        break;
+                    case "just_kidding":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/just kidding.ogg"));
+                        break;
+                    case "saunter":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/saunter.ogg"));
+                        break;
+                    case "help_me_up":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/help me up.ogg"));
+                        break;
+                    case "ocean_of_stars":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/ocean of stars.ogg"));
+                        break;
+                    case "bash":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/bash.ogg"));
+                        break;
+                    case "whirlwind":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/whirlwind.ogg"));
+                        break;
+                    case "screamroom":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/screamroom.ogg"));
+                        break;
+                    case "ichor":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/ichor.ogg"));
+                        break;
+                    case "time_lapse":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/time lapse.ogg"));
+                        break;
+                    case "calm":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/calm.ogg"));
+                        break;
+                    case "gloomy":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/gloomy.ogg"));
+                        break;
+                    case "love's_song":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/love's song.ogg"));
+                        break;
+                    case "blast_em":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/blast em.ogg"));
+                        break;
+                    case "lost_in_the_rhythm":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/lost in the rhythm.ogg"));
+                        break;
+                    case "zelda_palace":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/zelda palace.ogg"));
+                        break;
+                    case "form":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/form.ogg"));
+                        break;
+                    case "paladin":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/paladin.ogg"));
+                        break;
+                    case "myriad":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/myriad.ogg"));
+                        break;
+                    case "pyrolysis":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/pyrolysis.ogg"));
+                        break;
+                    case "elevatia":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/elevatia.ogg"));
+                        break;
+                    case "prelude_remix":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/prelude remix.ogg"));
+                        break;
+                    case "could_it_be":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/could it be.ogg"));
+                        break;
+                    case "spooky":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/spooky.ogg"));
+                        break;
+                    case "ena":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/ena.ogg"));
+                        break;
+                    case "reapers":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/reapers.ogg"));
+                        break;
+                    case "last_dance":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/last dance.ogg"));
+                        break;
+                    case "reminisce":
+                        musicTestMap.put(key, new MusicTest("resources_/music_/reminisce.ogg"));
+                        break;
+
+                    // template
+                /*case "null":
+                    musicTestMap.put(key, new MusicTest("resources_/music_/null.ogg"));
+                    break;*/
+                }
+            }
+
+
+    // test getters for beta audio engine
+    public static MusicTest getMusicBeta (String key){
+        if (key != "music" && key != "null" && key != "shop_music" && key != "game_over"
+                && game_.gameState != STATE.GameBeta) {
+            if (currentMusic != null) streamPlayer.stop();
+            currentMusic = key;
+            game_.gameState = STATE.Load;
+            game_.stringsforloading = "loading music: " + key;
+            game_.loadstate -= 25;
+            load(key);
+            game_.loadstate += 25;
+        }
+        return musicTestMap.get(key);
+    }
+
+    // test class for old audio engine, do not use
+    public static class MusicTest {
+        public MusicTest(String ref){
+            ref = ref.replace('/', '\\');
+            File file = new File(ref);
+            playSong(file);
+        }
+        public static void playSong(File file){
+            try {
+                // ----------------------Open the Media
+                System.out.println("Opening ...");
+                streamPlayer.open(file);
+
+                // ---------------------- Play the Media
+                System.out.println("Starting to play ...");
+                streamPlayer.play();
+
+//            oscilloscope.setShowFPS(true);
+
+
+            } catch (StreamPlayerException e) {
+                e.printStackTrace();
+            }
+        }
+        public void play() {
+            if (currentMusic != null) streamPlayer.stop();
+            game_.gameState = STATE.Load;
+            game_.stringsforloading = "loading music: " + currentMusic;
+            try {
+                streamPlayer.play();
+            } catch (StreamPlayerException e) {
+                e.printStackTrace();
+            }
+            game_.gameState = STATE.GameBeta;
+        }
+        public void resume(){
+            streamPlayer.resume();
+        }
+        public void pause(){
+            streamPlayer.pause();
+        }
+        public void stop(){
+            streamPlayer.stop();
+        }
+        public void loop() {
+            // TODO: loop streamPlayer
+            if (currentMusic != null) streamPlayer.stop();
+            game_.gameState = STATE.Load;
+            game_.stringsforloading = "loading music: " + currentMusic;
+            game_.loadstate -= 25;
+            try {
+                streamPlayer.play();
+            } catch (StreamPlayerException e) {
+                e.printStackTrace();
+            }
+            game_.loadstate += 25;
+            game_.gameState = STATE.GameBeta;
+        }
+        public float getPosition() {
+            return osc_.audioTimeInFloat;
+        }
+    }

@@ -1,0 +1,229 @@
+// other loops
+        if (loops == "clean"){
+            long lastTime = System.nanoTime();
+            double amountOfTicks = 100.0;
+            double ns = 1000000000 / amountOfTicks;
+            double delta = 0;
+            long timer = System.currentTimeMillis();
+            int frames = 0 ;
+            while (running) {
+                long now = System.nanoTime();
+                delta += (now - lastTime) / ns;
+                lastTime = now;
+                while (delta >= 1) {
+                    tick();
+                    delta--;
+                }
+                if(running)
+                    render();
+                frames++;
+
+                if(System.currentTimeMillis() - timer > 1000) {
+                    timer += 1000;
+                    System.out.println("FPS: " + frames);
+                    frames = 0;
+                }
+            }
+            stop();
+        }
+        if (loops == "delta"){
+            long lastLoopTime = System.nanoTime();
+            final int TARGET_FPS = 100;
+            final long OPTIMAL_TIME = 1000000000 / TARGET_FPS;
+
+            while (running) {
+                long now = System.nanoTime();
+                long updateTime = now - lastLoopTime;
+                lastLoopTime = now;
+
+                double delta = updateTime / (double) OPTIMAL_TIME;
+
+                tick();
+                render();
+            }
+        }
+        if (loops == "minecraft"){
+            long lastTime = System.nanoTime();
+            double amountOfTicks = 100.0;
+            double ns = 1000000000 / amountOfTicks;
+            double delta = 0;
+            long timer = System.currentTimeMillis();
+            int frames = 0;
+            while(running) {
+                long now = System.nanoTime();
+                delta += (now - lastTime) / ns;
+                lastTime = now;
+                while(delta >= 1) {
+                    tick();
+                    //updates++;
+                    delta--;
+                }
+                render();
+                frames++;
+
+                if(System.currentTimeMillis() - timer > 1000) {
+                    timer += 1000;
+                    frames = 0;
+                    //updates = 0;
+                }
+            }
+            stop();
+        }
+        if (loops == "not gpu friendly"){
+            long now;
+            long updateTime;
+            long wait;
+
+            final int TARGET_FPS = 100; // also tick
+            final long OPTIMAL_TIME = 1000000000 / TARGET_FPS; // also ns
+
+            int tick = 0;
+            long timerTick = System.currentTimeMillis();
+
+            long timer = System.currentTimeMillis();
+            int frames = 0;
+
+            // pro codes for tick
+            long lastTime = System.nanoTime();
+            double amountOfTicks = 100.0;
+            double ns = 1000000000 / amountOfTicks;
+            double delta = 0;
+
+            while (running) {
+                now = System.nanoTime();
+
+                // loop this, pro
+                long nowPro = System.nanoTime();
+                delta += (nowPro - lastTime) / ns;
+                lastTime = nowPro;
+                // loop this tick, pro
+                while (delta >= 1) {
+                    try {
+                        tick();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        int a = JOptionPane.showConfirmDialog(null, "An error occurred: " + e + ", \ndo you still wish to continue?", "Error", JOptionPane.INFORMATION_MESSAGE);
+                        if (a == JOptionPane.NO_OPTION) System.exit(0);
+
+                        // if error caught but continued, still work in progress
+                        levels.resetMethod();
+                        if (game_.music) audioplayer_.getMusic(audioplayer_.currentMusic).loop();
+                        if (game_.music) audioplayer_.getSound("click_sound").play();
+                    }
+                    delta--;
+                    // tick test
+                    tick++;
+                }
+
+                render();
+
+                updateTime = System.nanoTime() - now;
+                wait = (OPTIMAL_TIME - updateTime) / 1000000000;
+
+                // test tick
+                if (System.currentTimeMillis() - timerTick > 1000) {
+                    timerTick += 1000;
+//                    System.out.println(tick);
+                    throwTick = tick;
+                    tick = 0;
+                }
+                // frame count
+                frames++;
+                if (System.currentTimeMillis() - timer > 1000) {
+                    timer += 1000;
+//                System.out.println("FPS: " + frames);
+//                System.out.println("Objects: " + handler.object.size());
+                    throwFrames = frames;
+//                    render();
+                    frames = 0;
+                }
+
+                try {
+                    Thread.sleep(wait);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        if (loops == "custom"){
+            // pro
+            long lastTime = System.nanoTime();
+            double amountOfTicks = 100.0;
+            double ns = 1000000000 / amountOfTicks;
+            double delta = 0;
+            // noob
+            long nowNoob;
+            long updateTime;
+            long wait;
+
+            final int TARGET_FPS = 100; // also tick
+            final long OPTIMAL_TIME = 1000000000 / TARGET_FPS; // also ns
+            // frame test
+            long timer = System.currentTimeMillis();
+            int frames = 0;
+            // tick test
+            int tick = 0;
+            long timerTick = System.currentTimeMillis();
+            while(running) {
+                // loop this, pro
+                long now = System.nanoTime();
+                delta += (now - lastTime) / ns;
+                lastTime = now;
+                // loop this, noob
+                nowNoob = System.nanoTime();
+                // loop this tick
+                while (delta >= 1) {
+                    try {
+                        tick();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        int a = JOptionPane.showConfirmDialog(null, "An error occurred: " + e + ", \ndo you still wish to continue?", "Error", JOptionPane.INFORMATION_MESSAGE);
+                        if (a == JOptionPane.NO_OPTION) System.exit(0);
+
+                        // if error caught but continued, still work in progress
+                        levels.resetMethod();
+                        if (game_.music) audioplayer_.getMusic(audioplayer_.currentMusic).loop();
+                        if (game_.music) audioplayer_.getSound("click_sound").play();
+                    }
+                    delta--;
+                    // tick test
+                    tick++;
+                }
+                // render this
+                if (running) {
+                    try {
+                        render();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        int a = JOptionPane.showConfirmDialog(null, "An error occurred: " + e + ", \ndo you still wish to continue?", "Error", JOptionPane.INFORMATION_MESSAGE);
+                        if (a == JOptionPane.NO_OPTION) System.exit(0);
+                    }
+                }
+                frames++;
+                // noob codes
+                updateTime = System.nanoTime() - nowNoob;
+                wait = (OPTIMAL_TIME - updateTime) / 1000000000;
+                try {
+                    Thread.sleep(wait);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                // reset frame count
+                if (System.currentTimeMillis() - timer > 1000) {
+                    timer += 1000;
+//                System.out.println("FPS: " + frames);
+//                System.out.println("Objects: " + handler.object.size());
+                    throwFrames = frames;
+//                    render();
+                    frames = 0;
+                }
+                // test tick
+                if (System.currentTimeMillis() - timerTick > 1000) {
+                    timerTick += 1000;
+//                    System.out.println(tick);
+                    throwTick = tick;
+                    tick = 0;
+                }
+            }
+            stop();
+        }

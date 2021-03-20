@@ -1,0 +1,14 @@
+// all test codes
+        // X
+        /*g.setColor(Color.green);
+        g.drawString("X", x, y);
+        g.dispose();*/
+
+        // eyes and mouth
+        /*g.setColor(Color.black);
+        g.fillRect(500, 250, 100, 100);
+        g.fillRect(700, 250, 100, 100);
+        g.fillRect(600, 350, 100, 100);
+        g.fillRect(600, 400, 100, 100);
+        g.fillRect(550, 400, 50, 150);
+        g.fillRect(700, 400, 50, 150);*/

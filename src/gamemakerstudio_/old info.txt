@@ -1,0 +1,15 @@
+// get Runtime instance
+    public static Runtime instance = Runtime.getRuntime();
+
+    public static class memoryStats {
+        static int mb = 1024 * 1024;
+        /**** Heap utilization statistics [MB] ****/
+        // available memory
+        static long totalMemory = (instance.totalMemory() / mb);
+        // free memory
+        static long freeMemory = (instance.freeMemory() / mb);
+        // used memory
+        static long usedMemory = ((instance.totalMemory() - instance.freeMemory()) / mb);
+        // Maximum available memory
+        static long maximumAvailableMemory = (instance.maxMemory() / mb);
+    }

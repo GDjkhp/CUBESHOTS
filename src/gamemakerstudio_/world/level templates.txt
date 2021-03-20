@@ -1,0 +1,209 @@
+hover
+if (page == 0) {
+            // first row
+            if (mouseOver(mx, my, 50, 50, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 150, 50, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 250, 50, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 350, 50, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 450, 50, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 550, 50, 50, 50)){
+                testString = "";
+            }
+            // second row
+            else if (mouseOver(mx, my, 50, 150, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 150, 150, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 250, 150, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 350, 150, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 450, 150, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 550, 150, 50, 50)){
+                testString = "";
+            }
+            // third row
+            else if (mouseOver(mx, my, 50, 250, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 150, 250, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 250, 250, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 350, 250, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 450, 250, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 550, 250, 50, 50)){
+                testString = "";
+            }
+            // fourth row
+            else if (mouseOver(mx, my, 50, 350, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 150, 350, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 250, 350, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 350, 350, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 450, 350, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 550, 350, 50, 50)){
+                testString = "";
+            }
+            // fifth row
+            else if (mouseOver(mx, my, 50, 450, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 150, 450, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 250, 450, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 350, 450, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 450, 450, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 550, 450, 50, 50)){
+                testString = "";
+            }
+            // sixth row
+            else if (mouseOver(mx, my, 50, 550, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 150, 550, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 250, 550, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 350, 550, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 450, 550, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 550, 550, 50, 50)){
+                testString = "";
+            }
+            // seventh row
+            else if (mouseOver(mx, my, 50, 650, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 150, 650, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 250, 650, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 350, 650, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 450, 650, 50, 50)){
+                testString = "";
+            }
+            else if (mouseOver(mx, my, 550, 650, 50, 50)){
+                testString = "";
+            }
+            // else change to zero
+            else testString = "";
+        }
+
+        if (mouseOver(mx, my, 50, 50, 50, 50)){
+            testString = "";
+        }
+        else if (mouseOver(mx, my, 50, 50, 50, 50)){
+            testString = "";
+        }
+        // else change to zero
+            else testString = "";
+list
+// template TODO: you should re-arrange these and make an automated code generator
+if (mouseOver(mx, my, 50, 50, 50, 50)) {
+                levelid = 0;
+                System.out.println("world " + levelid);
+                if (game_.music) audioplayer_.getMusic("null").loop();
+                // world misc
+                bpm = 0;
+                endBar = 0;
+                // reset method
+                resetMethod();
+            }
+old grid
+// first row
+g.drawRect(50, 50, 50, 50);
+            g.drawRect(150, 50, 50, 50);
+            g.drawRect(250, 50, 50, 50);
+            g.drawRect(350, 50, 50, 50);
+            g.drawRect(450, 50, 50, 50);
+            g.drawRect(550, 50, 50, 50);
+            // second row
+            g.drawRect(50, 150, 50, 50);
+            g.drawRect(150, 150, 50, 50);
+            g.drawRect(250, 150, 50, 50);
+            g.drawRect(350, 150, 50, 50);
+            g.drawRect(450, 150, 50, 50);
+            g.drawRect(550, 150, 50, 50);
+            // third row
+            g.drawRect(50, 250, 50, 50);
+            g.drawRect(150, 250, 50, 50);
+            g.drawRect(250, 250, 50, 50);
+            g.drawRect(350, 250, 50, 50);
+            g.drawRect(450, 250, 50, 50);
+            g.drawRect(550, 250, 50, 50);
+            // fourth row
+            g.drawRect(50, 350, 50, 50);
+            g.drawRect(150, 350, 50, 50);
+            g.drawRect(250, 350, 50, 50);
+            g.drawRect(350, 350, 50, 50);
+            g.drawRect(450, 350, 50, 50);
+            g.drawRect(550, 350, 50, 50);
+            // fifth row
+            g.drawRect(50, 450, 50, 50);
+            g.drawRect(150, 450, 50, 50);
+            g.drawRect(250, 450, 50, 50);
+            g.drawRect(350, 450, 50, 50);
+            g.drawRect(450, 450, 50, 50);
+            g.drawRect(550, 450, 50, 50);
+            // sixth row
+            g.drawRect(50, 550, 50, 50);
+            g.drawRect(150, 550, 50, 50);
+            g.drawRect(250, 550, 50, 50);
+            g.drawRect(350, 550, 50, 50);
+            g.drawRect(450, 550, 50, 50);
+            g.drawRect(550, 550, 50, 50);
+            // seventh row
+            g.drawRect(50, 650, 50, 50);
+            g.drawRect(150, 650, 50, 50);
+            g.drawRect(250, 650, 50, 50);
+            g.drawRect(350, 650, 50, 50);
+            g.drawRect(450, 650, 50, 50);
+            g.drawRect(550, 650, 50, 50);

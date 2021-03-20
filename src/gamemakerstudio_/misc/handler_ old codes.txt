@@ -1,0 +1,70 @@
+// reset everything and spawn players
+    public void clearEnemies() {
+        for (int i = object.size() - 1; i >= 0; i--) {
+            try {
+                gameobject_ tempObject = object.get(i);
+                // todo: convert this to switch statement
+                if (tempObject.getId() != ID.Trail) {
+                    if (tempObject.getId() != ID.CURSOR) {
+                        if (tempObject.getId() != ID.NULL) {
+                            if (tempObject.getId() != ID.OSC) {
+                                if (tempObject.getId() != ID.RenderTexture) {
+                                    removeObject(tempObject); // when adding whitelist, sync removeObjectExceptPlayers()
+                                }
+                            }
+                        }
+                    }
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+                int a = JOptionPane.showConfirmDialog(null, "An error occurred: " + e + ", " +
+                        "\ndo you still wish to continue?", "Error", JOptionPane.INFORMATION_MESSAGE);
+                if (a == JOptionPane.NO_OPTION) System.exit(0);
+            }
+        }
+        // shit codes
+        addObject(new player_(50, 200, ID.Player, this, hud));
+        addObject(new RangeArea(0, 0, ID.P1Range, this));
+        if (game_.multiplayer) {
+            addObject(new player2_(game_.WIDTH - 128, 200, ID.Player2, this, hud2));
+            addObject(new RangeArea(0, 0, ID.P2Range, this));
+        }
+    }
+    // reset everything except players
+    // do not kill players using these, see devconsole_ removeEntities
+    public void removeObjectsExceptPlayers() {
+        // remove objects except players
+        for (int i = object.size() - 1; i >= 0; i--) {
+            gameobject_ tempObject = object.get(i);
+            // todo: convert this to switch statement
+            // whitelist here
+            if (tempObject.getId() != ID.Player) {
+                if (tempObject.getId() != ID.Player2) {
+                    if (tempObject.getId() != ID.HeartFriend) {
+                        if (tempObject.getId() != ID.BulletHell) {
+                            if (tempObject.getId() != ID.ChlorophyteP1) {
+                                if (tempObject.getId() != ID.P1Range) {
+                                    if (tempObject.getId() != ID.ChlorophyteP2) {
+                                        if (tempObject.getId() != ID.P2Range) {
+                                            // sync clearEnemies() here
+                                            if (tempObject.getId() != ID.Trail) {
+                                                if (tempObject.getId() != ID.CURSOR) {
+                                                    if (tempObject.getId() != ID.NULL) {
+                                                        if (tempObject.getId() != ID.OSC) {
+                                                            if (tempObject.getId() != ID.RenderTexture) {
+                                                                removeObject(tempObject);
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
