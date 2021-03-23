@@ -7,8 +7,8 @@ package gamemakerstudio_.gui;
 
 import gamemakerstudio_.game_;
 import gamemakerstudio_.misc.STATE;
-import gamemakerstudio_.misc.audioplayer_;
-import gamemakerstudio_.misc.handler_;
+import gamemakerstudio_.misc.audiostuff.audioplayer_;
+import gamemakerstudio_.misc.entitystuff.handler_;
 
 import java.awt.*;
 import java.awt.event.MouseAdapter;

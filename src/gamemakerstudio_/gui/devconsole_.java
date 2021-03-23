@@ -4,6 +4,10 @@ import gamemakerstudio_.entities.*;
 import gamemakerstudio_.entities.experimental.*;
 import gamemakerstudio_.game_;
 import gamemakerstudio_.misc.*;
+import gamemakerstudio_.misc.audiostuff.audioplayer_;
+import gamemakerstudio_.misc.entitystuff.FACE;
+import gamemakerstudio_.misc.entitystuff.ID;
+import gamemakerstudio_.misc.entitystuff.handler_;
 
 import javax.swing.*;
 import java.awt.*;

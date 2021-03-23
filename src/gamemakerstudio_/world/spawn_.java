@@ -10,9 +10,9 @@ import gamemakerstudio_.entities.boss.creeperboss_;
 import gamemakerstudio_.entities.boss.skullface_;
 import gamemakerstudio_.game_;
 import gamemakerstudio_.gui.hud_;
-import gamemakerstudio_.misc.ID;
-import gamemakerstudio_.misc.gameobject_;
-import gamemakerstudio_.misc.handler_;
+import gamemakerstudio_.misc.entitystuff.ID;
+import gamemakerstudio_.misc.entitystuff.gameobject_;
+import gamemakerstudio_.misc.entitystuff.handler_;
 
 import java.util.Random;
 

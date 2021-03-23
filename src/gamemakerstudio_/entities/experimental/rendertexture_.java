@@ -2,10 +2,10 @@ package gamemakerstudio_.entities.experimental;
 
 import gamemakerstudio_.game_;
 import gamemakerstudio_.gui.window_;
-import gamemakerstudio_.misc.ID;
-import gamemakerstudio_.misc.ScreenImage;
-import gamemakerstudio_.misc.assets_;
-import gamemakerstudio_.misc.gameobject_;
+import gamemakerstudio_.misc.entitystuff.ID;
+import gamemakerstudio_.misc.graphicsstuff.ScreenImage;
+import gamemakerstudio_.misc.graphicsstuff.assets_;
+import gamemakerstudio_.misc.entitystuff.gameobject_;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;

@@ -5,9 +5,9 @@
  */
 package gamemakerstudio_.entities;
 
-import gamemakerstudio_.misc.ID;
-import gamemakerstudio_.misc.gameobject_;
-import gamemakerstudio_.misc.handler_;
+import gamemakerstudio_.misc.entitystuff.ID;
+import gamemakerstudio_.misc.entitystuff.gameobject_;
+import gamemakerstudio_.misc.entitystuff.handler_;
 
 import java.awt.*;
 

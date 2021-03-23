@@ -3,11 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gamemakerstudio_.misc;
+package gamemakerstudio_.misc.audiostuff;
 
 import com.xuggle.xuggler.ICodec;
 import gamemakerstudio_.entities.experimental.osc_;
 import gamemakerstudio_.game_;
+import gamemakerstudio_.misc.STATE;
 import gamemakerstudio_.misc.audiostuff.jzoom.streamplayer.StreamPlayer;
 import gamemakerstudio_.misc.audiostuff.jzoom.streamplayer.StreamPlayerException;
 import org.newdawn.slick.Music;

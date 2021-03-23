@@ -1,9 +1,9 @@
 package gamemakerstudio_.entities.experimental;
 
 import gamemakerstudio_.game_;
-import gamemakerstudio_.misc.ID;
+import gamemakerstudio_.misc.entitystuff.ID;
 import gamemakerstudio_.misc.PVector;
-import gamemakerstudio_.misc.gameobject_;
+import gamemakerstudio_.misc.entitystuff.gameobject_;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;

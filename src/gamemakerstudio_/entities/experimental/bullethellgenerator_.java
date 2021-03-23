@@ -3,10 +3,10 @@ package gamemakerstudio_.entities.experimental;
 import gamemakerstudio_.entities.basecircle_;
 import gamemakerstudio_.entities.circlewithpatterns_;
 import gamemakerstudio_.game_;
-import gamemakerstudio_.misc.ID;
+import gamemakerstudio_.misc.entitystuff.ID;
 import gamemakerstudio_.misc.MathUtil;
-import gamemakerstudio_.misc.gameobject_;
-import gamemakerstudio_.misc.handler_;
+import gamemakerstudio_.misc.entitystuff.gameobject_;
+import gamemakerstudio_.misc.entitystuff.handler_;
 
 import javax.swing.*;
 import java.awt.*;

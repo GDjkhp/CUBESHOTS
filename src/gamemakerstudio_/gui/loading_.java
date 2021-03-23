@@ -7,8 +7,8 @@ package gamemakerstudio_.gui;
 
 import gamemakerstudio_.entities.experimental.placeholdertext_;
 import gamemakerstudio_.game_;
-import gamemakerstudio_.misc.BufferedImageLoader;
-import gamemakerstudio_.misc.ID;
+import gamemakerstudio_.misc.graphicsstuff.BufferedImageLoader;
+import gamemakerstudio_.misc.entitystuff.ID;
 import gamemakerstudio_.misc.MathUtil;
 
 import java.awt.*;

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gamemakerstudio_.misc;
+package gamemakerstudio_.misc.entitystuff;
 
 import gamemakerstudio_.entities.RangeArea;
 import gamemakerstudio_.entities.player2_;
@@ -11,6 +11,7 @@ import gamemakerstudio_.entities.player_;
 import gamemakerstudio_.game_;
 import gamemakerstudio_.gui.hud2_;
 import gamemakerstudio_.gui.hud_;
+import gamemakerstudio_.misc.audiostuff.audioplayer_;
 
 import javax.swing.*;
 import java.awt.*;

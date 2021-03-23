@@ -1,14 +1,12 @@
 package gamemakerstudio_.entities.experimental;
 
-import gamemakerstudio_.misc.ID;
-import gamemakerstudio_.misc.audioplayer_;
+import gamemakerstudio_.misc.entitystuff.ID;
 import gamemakerstudio_.misc.audiostuff.jzoom.streamplayer.Status;
 import gamemakerstudio_.misc.audiostuff.jzoom.streamplayer.StreamPlayer;
 import gamemakerstudio_.misc.audiostuff.jzoom.streamplayer.StreamPlayerEvent;
 import gamemakerstudio_.misc.audiostuff.jzoom.streamplayer.StreamPlayerListener;
 import gamemakerstudio_.misc.audiostuff.jzoom.visualizer.Oscilloscope;
-import gamemakerstudio_.misc.gameobject_;
-import gamemakerstudio_.world.levels_;
+import gamemakerstudio_.misc.entitystuff.gameobject_;
 
 import java.awt.*;
 import java.util.Map;

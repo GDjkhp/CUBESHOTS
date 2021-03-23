@@ -6,9 +6,8 @@
 package gamemakerstudio_.gui;
 
 import gamemakerstudio_.game_;
-import gamemakerstudio_.misc.assets_;
 import gamemakerstudio_.misc.audiostuff.xtaudio.XtAudio;
-import gamemakerstudio_.misc.handler_;
+import gamemakerstudio_.misc.entitystuff.handler_;
 
 import javax.swing.*;
 import java.awt.*;
@@ -16,7 +15,6 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.awt.image.BufferedImage;
 import java.util.Random;
 /**
  *
@@ -1054,29 +1052,29 @@ public class window_ extends WindowAdapter implements KeyListener {
             case 474:
                 return "hacker == programmer";
             case 475:
-                return "";
+                return "intellisense";
             case 476:
-                return "";
+                return "Intelligent code completion";
             case 477:
-                return "";
+                return "you don't have to write pretty code to make a fun game";
             case 478:
-                return "";
+                return "ludum dare";
             case 479:
-                return "";
+                return "sweaty speedrunner approved";
             case 480:
-                return "";
+                return "npesta approved";
             case 481:
-                return "";
+                return "how much is a 10$ uber ride";
             case 482:
-                return "";
+                return "how heavy is a 10kg one";
             case 483:
-                return "";
+                return "artificial intelligence A.I.";
             case 484:
-                return "";
+                return "60 seconds in-game, a minute passes";
             case 485:
-                return "";
+                return "one does not simply leave a random splash on the title";
             case 486:
-                return "";
+                return "i will do anything to eat a meal by the power of slaps";
             case 487:
                 return "";
             case 488:

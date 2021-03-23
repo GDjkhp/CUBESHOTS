@@ -1,4 +1,4 @@
-package gamemakerstudio_.misc;
+package gamemakerstudio_.misc.graphicsstuff;
 
 public class gamecamera_ {
 

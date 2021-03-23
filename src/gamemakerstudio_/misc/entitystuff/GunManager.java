@@ -1,4 +1,4 @@
-package gamemakerstudio_.misc;
+package gamemakerstudio_.misc.entitystuff;
 
 import gamemakerstudio_.entities.guns.*;
 

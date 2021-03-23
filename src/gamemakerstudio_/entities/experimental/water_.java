@@ -1,6 +1,8 @@
 package gamemakerstudio_.entities.experimental;
 
 import gamemakerstudio_.misc.*;
+import gamemakerstudio_.misc.entitystuff.ID;
+import gamemakerstudio_.misc.entitystuff.gameobject_;
 
 import java.awt.*;
 import java.util.Random;

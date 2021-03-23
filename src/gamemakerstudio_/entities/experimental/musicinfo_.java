@@ -1,7 +1,7 @@
 package gamemakerstudio_.entities.experimental;
 
-import gamemakerstudio_.misc.ID;
-import gamemakerstudio_.misc.gameobject_;
+import gamemakerstudio_.misc.entitystuff.ID;
+import gamemakerstudio_.misc.entitystuff.gameobject_;
 
 import java.awt.*;
 

@@ -1,11 +1,9 @@
 package gamemakerstudio_.entities.experimental;
 
 import gamemakerstudio_.game_;
-import gamemakerstudio_.misc.ID;
-import gamemakerstudio_.misc.gameobject_;
-import gamemakerstudio_.misc.handler_;
+import gamemakerstudio_.misc.entitystuff.ID;
+import gamemakerstudio_.misc.entitystuff.gameobject_;
 
-import javax.swing.*;
 import javax.swing.Timer;
 import java.awt.*;
 import java.awt.event.ActionEvent;

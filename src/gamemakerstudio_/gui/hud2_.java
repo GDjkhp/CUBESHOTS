@@ -6,7 +6,7 @@
 package gamemakerstudio_.gui;
 
 import gamemakerstudio_.game_;
-import gamemakerstudio_.misc.GunManager;
+import gamemakerstudio_.misc.entitystuff.GunManager;
 import gamemakerstudio_.misc.MathUtil;
 import gamemakerstudio_.misc.STATE;
 

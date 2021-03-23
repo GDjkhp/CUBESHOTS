@@ -1,9 +1,9 @@
 package gamemakerstudio_.entities;
 
-import gamemakerstudio_.misc.FACE;
-import gamemakerstudio_.misc.ID;
-import gamemakerstudio_.misc.assets_;
-import gamemakerstudio_.misc.gameobject_;
+import gamemakerstudio_.misc.entitystuff.FACE;
+import gamemakerstudio_.misc.entitystuff.ID;
+import gamemakerstudio_.misc.graphicsstuff.assets_;
+import gamemakerstudio_.misc.entitystuff.gameobject_;
 
 import java.awt.*;
 import java.awt.geom.AffineTransform;

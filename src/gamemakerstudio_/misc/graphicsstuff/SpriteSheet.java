@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gamemakerstudio_.misc;
+package gamemakerstudio_.misc.graphicsstuff;
 
 import java.awt.image.BufferedImage;
 

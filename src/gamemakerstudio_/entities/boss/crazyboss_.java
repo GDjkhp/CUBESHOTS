@@ -2,6 +2,10 @@ package gamemakerstudio_.entities.boss;
 
 import gamemakerstudio_.entities.tnt_;
 import gamemakerstudio_.misc.*;
+import gamemakerstudio_.misc.entitystuff.ID;
+import gamemakerstudio_.misc.entitystuff.gameobject_;
+import gamemakerstudio_.misc.entitystuff.handler_;
+import gamemakerstudio_.misc.graphicsstuff.assets_;
 
 import java.awt.*;
 import java.awt.geom.AffineTransform;

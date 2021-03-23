@@ -10,6 +10,11 @@ import gamemakerstudio_.entities.ghost_;
 import gamemakerstudio_.entities.player2_;
 import gamemakerstudio_.game_;
 import gamemakerstudio_.misc.*;
+import gamemakerstudio_.misc.audiostuff.audioplayer_;
+import gamemakerstudio_.misc.entitystuff.ID;
+import gamemakerstudio_.misc.entitystuff.gameobject_;
+import gamemakerstudio_.misc.entitystuff.handler_;
+import gamemakerstudio_.misc.graphicsstuff.assets_;
 import gamemakerstudio_.world.levels_;
 
 import javax.swing.*;

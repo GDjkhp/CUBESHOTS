@@ -1,12 +1,11 @@
 package gamemakerstudio_.entities.experimental;
 
 import gamemakerstudio_.game_;
-import gamemakerstudio_.misc.ID;
-import gamemakerstudio_.misc.gameobject_;
+import gamemakerstudio_.misc.entitystuff.ID;
+import gamemakerstudio_.misc.entitystuff.gameobject_;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.util.Arrays;
 
 public class mandelbrot_ extends gameobject_ {
     int canvasWidth = game_.WIDTH, canvasHeight = game_.HEIGHT;

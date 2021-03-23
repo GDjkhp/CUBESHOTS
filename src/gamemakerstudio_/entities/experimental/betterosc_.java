@@ -3,19 +3,15 @@ package gamemakerstudio_.entities.experimental;
 import com.xuggle.xuggler.ICodec;
 import gamemakerstudio_.game_;
 import gamemakerstudio_.misc.*;
-import gamemakerstudio_.misc.audiostuff.xtaudio.XtAudio;
+import gamemakerstudio_.misc.audiostuff.audioplayer_;
+import gamemakerstudio_.misc.entitystuff.ID;
+import gamemakerstudio_.misc.entitystuff.gameobject_;
+import gamemakerstudio_.misc.graphicsstuff.assets_;
 
-import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-import java.awt.geom.AffineTransform;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
 import java.util.Random;
 
 import static gamemakerstudio_.game_.*;

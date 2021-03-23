@@ -7,13 +7,17 @@ package gamemakerstudio_;
 
 import com.xuggle.mediatool.IMediaWriter;
 import com.xuggle.mediatool.ToolFactory;
-import com.xuggle.xuggler.ICodec;
 import gamemakerstudio_.entities.*;
 import gamemakerstudio_.entities.boss.crazyboss_;
 import gamemakerstudio_.entities.experimental.*;
 import gamemakerstudio_.gui.*;
 import gamemakerstudio_.misc.*;
+import gamemakerstudio_.misc.audiostuff.audioplayer_;
 import gamemakerstudio_.misc.audiostuff.xtaudio.XtAudio;
+import gamemakerstudio_.misc.entitystuff.ID;
+import gamemakerstudio_.misc.entitystuff.gameobject_;
+import gamemakerstudio_.misc.entitystuff.handler_;
+import gamemakerstudio_.misc.graphicsstuff.*;
 import gamemakerstudio_.world.levels_;
 import gamemakerstudio_.world.spawn_;
 import gamemakerstudio_.world.world_;
@@ -21,9 +25,9 @@ import gamemakerstudio_.world.world_;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.AffineTransform;
-import java.awt.image.BufferStrategy;
-import java.awt.image.BufferedImage;
+import java.awt.image.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -44,7 +48,7 @@ public class game_ extends GameEngine {
     }
 
     // dimension
-    public static int WIDTH = 1360, HEIGHT = 720;
+    public static int WIDTH = 1360/2, HEIGHT = 720;
     // the game state
     public static STATE gameState = STATE.Load; // default is STATE.Load
     // difficulty
@@ -165,8 +169,8 @@ public class game_ extends GameEngine {
         handler.addObject(new rendertexture_(WIDTH - WIDTH/2, 0, ID.NULL, WIDTH/2, HEIGHT/2, 0, 0));
         handler.addObject(new rendertexture_(0, HEIGHT - HEIGHT/2, ID.NULL, WIDTH/2, HEIGHT/2, 0, 0));*/
 
-        /*handler.addObject(new rendertexture_(WIDTH/2 - (WIDTH/2)/2, HEIGHT/2 - (HEIGHT/2)/2, ID.RenderTexture, WIDTH/2, HEIGHT/2, 0, 0));
-        handler.addObject(new rendertexture_(WIDTH/2 - (WIDTH/4)/2, HEIGHT/2 - (HEIGHT/4)/2, ID.RenderTexture, WIDTH/4, HEIGHT/4, 0, 0));*/
+        // handler.addObject(new rendertexture_(WIDTH/2 - (WIDTH/2)/2, HEIGHT/2 - (HEIGHT/2)/2, ID.RenderTexture, WIDTH/2, HEIGHT/2, 0, 0));
+        // handler.addObject(new rendertexture_(WIDTH/2 - (WIDTH/4)/2, HEIGHT/2 - (HEIGHT/4)/2, ID.RenderTexture, WIDTH/4, HEIGHT/4, 0, 0));
 
         // reset
         endCodes();
@@ -218,7 +222,7 @@ public class game_ extends GameEngine {
             // handler.addObject(new raycast_(0, 0, ID.Raycast, this));
             // handler.addObject(new mandelbrot_(0, 0, ID.Mandelbrot));
             // handler.addObject(new maze_(0, 0, ID.MazeGen, this));
-            // handler.addObject(new julia_(0, 0, ID.Julia));
+            handler.addObject(new julia_(0, 0, ID.Julia));
         }
 
         // weird thread sleep code for new audio capture engine
@@ -376,7 +380,8 @@ public class game_ extends GameEngine {
         }
     }
 
-    public static BufferedImage image = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_ARGB);
+    // the actual image to be rendered
+    public static BufferedImage image;
 
     @Override
     public void render() {
@@ -385,8 +390,8 @@ public class game_ extends GameEngine {
             this.createBufferStrategy(3);
             return;
         }
-
-        image = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_ARGB);
+        // init image
+        image = ImageProcessing.processHandlerInit(WIDTH, HEIGHT);
 
         Graphics g = image.createGraphics();
 
@@ -522,17 +527,25 @@ public class game_ extends GameEngine {
             int x = ((50 + (int)(Math.random() * 1250)) / 10) * 10, y = ((50 + (int)(Math.random() * 650)) / 10) * 10;
             g.fillRect(x, y, 10, 10);
         }
+
+        // image processing codes
+        image = ImageProcessing.postProcessing(image);
+
         // draw everything
         g.drawImage(image, 0, 0, null);
         bs.show();
+
         // xuggler shit, run this everytime
         if (recordVideo && writer.isOpen()){
             BufferedImage bgrScreen = convertToType(image,BufferedImage.TYPE_3BYTE_BGR);
             writer.encodeVideo(0, bgrScreen, System.nanoTime() - startTime, TimeUnit.NANOSECONDS);
         }
+
         // dispose properly
         g.dispose();
     }
+
+
 
     public static BufferedImage convertToType(BufferedImage sourceImage, int targetType) {
 

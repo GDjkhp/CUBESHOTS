@@ -1,7 +1,7 @@
 package gamemakerstudio_.gui;
 
 import gamemakerstudio_.game_;
-import gamemakerstudio_.misc.handler_;
+import gamemakerstudio_.misc.entitystuff.handler_;
 
 import java.awt.*;
 

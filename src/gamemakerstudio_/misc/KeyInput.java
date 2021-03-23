@@ -14,6 +14,12 @@ import gamemakerstudio_.gui.devconsole_;
 import gamemakerstudio_.gui.hud2_;
 import gamemakerstudio_.gui.hud_;
 import gamemakerstudio_.gui.shop_;
+import gamemakerstudio_.misc.audiostuff.audioplayer_;
+import gamemakerstudio_.misc.entitystuff.GunManager;
+import gamemakerstudio_.misc.entitystuff.ID;
+import gamemakerstudio_.misc.entitystuff.gameobject_;
+import gamemakerstudio_.misc.entitystuff.handler_;
+import gamemakerstudio_.misc.graphicsstuff.ImageProcessing;
 import gamemakerstudio_.world.levels_;
 
 import java.awt.*;
@@ -21,6 +27,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.awt.image.BufferedImage;
 import java.util.Random;
 
 import static gamemakerstudio_.gui.window_.frame;
@@ -263,6 +270,12 @@ public class KeyInput extends KeyAdapter implements MouseListener {
         }
 
         // misc, if paused
+
+        // color model
+        if (key == KeyEvent.VK_F9){
+            ImageProcessing.trigger();
+            // System.out.println(ImageProcessing.shaders[ImageProcessing.number]);
+        }
 
         // fullscreen
         if (key == KeyEvent.VK_F11){
