@@ -242,6 +242,9 @@ public class menu_ implements KeyListener, MouseMotionListener, MouseListener {
         }
     }
     public void render(Graphics g) {
+        // update offset
+        xOffset = game_.WIDTH/2 - 100;
+
         // start rotate
         rotateAnimation();
 

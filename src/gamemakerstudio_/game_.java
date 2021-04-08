@@ -27,7 +27,6 @@ import java.awt.*;
 import java.awt.geom.AffineTransform;
 import java.awt.image.*;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -146,6 +145,7 @@ public class game_ extends GameEngine {
         // test graphics
 
         // custom arrow
+        // Image cursorImg = assets_.scaleImage(assets_.arrow, 32, 32);
         BufferedImage cursorImg = assets_.arrow;
         // Create a new blank cursor.
         Cursor blankCursor = Toolkit.getDefaultToolkit().createCustomCursor(
@@ -197,7 +197,6 @@ public class game_ extends GameEngine {
         stringsforloading = "loading sounds...";
         System.out.println(stringsforloading);
         System.out.println("==============================================================");
-        // TinySound.init();
         audioplayer_.load("");
         loadstate += 25;
 
@@ -206,6 +205,13 @@ public class game_ extends GameEngine {
         boolean CLEAR = false;
 
         if (CLEAR){
+            // record vars
+            recordSession = true;
+            audioplayer_.record = "voice";
+            betterosc_.imageReactMain = assets_.demon;
+            betterosc_.stereo = false; // true = wave, false = bar
+
+            // noob kill
             gameState = STATE.Edit;
             handler.clearEnemies();
             // to kill players, use this instead
@@ -222,7 +228,9 @@ public class game_ extends GameEngine {
             // handler.addObject(new raycast_(0, 0, ID.Raycast, this));
             // handler.addObject(new mandelbrot_(0, 0, ID.Mandelbrot));
             // handler.addObject(new maze_(0, 0, ID.MazeGen, this));
-            handler.addObject(new julia_(0, 0, ID.Julia));
+            // handler.addObject(new julia_(0, 0, ID.Julia));
+            // handler.addObject(new perlinnoiseterraringen2d_(0, 0, ID.NULL));
+            // handler.addObject(new tvstaticnoise_(0, 0, ID.NULL));
         }
 
         // weird thread sleep code for new audio capture engine
@@ -411,6 +419,7 @@ public class game_ extends GameEngine {
         // pre camera codes
         at.scale(sx, sy);
         at.translate(tx, ty);
+
         // post camera codes
         g2d.setTransform(at);
 

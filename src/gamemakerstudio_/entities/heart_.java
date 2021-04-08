@@ -6,6 +6,7 @@
 package gamemakerstudio_.entities;
 
 import gamemakerstudio_.game_;
+import gamemakerstudio_.misc.MathUtil;
 import gamemakerstudio_.misc.entitystuff.ID;
 import gamemakerstudio_.misc.graphicsstuff.assets_;
 import gamemakerstudio_.misc.entitystuff.gameobject_;
@@ -44,9 +45,12 @@ public class heart_ extends gameobject_ {
     
     public void tick() {
         // screen limit
-        if (x <= 0 || x >= game_.WIDTH) velX *= -1;
-        if (y <= 0 || y >= game_.HEIGHT) velY *= -1;
-        // todo: delete this if offscreen
+        /*if (x <= 0 || x >= game_.WIDTH) velX *= -1;
+        if (y <= 0 || y >= game_.HEIGHT) velY *= -1;*/
+
+        // clamp
+        x = MathUtil.clamp((int) x, 0, game_.WIDTH - 16);
+        y = MathUtil.clamp((int) y, 0, game_.HEIGHT - 16);
 
 //        collision();
 

@@ -11,6 +11,7 @@ import gamemakerstudio_.misc.graphicsstuff.assets_;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -32,7 +33,7 @@ public class betterosc_ extends gameobject_ implements KeyListener {
     int	halfCanvasHeight = HEIGHT/2;
     int canvasWidth = 1360/2;
 
-    boolean stereo = true;
+    public static boolean stereo = true;
 
     game_ game;
 
@@ -181,33 +182,43 @@ public class betterosc_ extends gameobject_ implements KeyListener {
             // the coding train codes
             colorIndex = (colorIndex == colorSize - 1) ? 0 : colorIndex + 1;
             gc.setColor(Color.getHSBColor((float) colorIndex / 360f, 1.0f, 1.0f));
-            for (int i = 0, offset = 0; i < pSample1.length; i++, offset += 1){
+
+            for (int i = 0, offset = 0; i < pSample1.length && i+offset < canvasWidth; i++, offset += 1){
                 float amp = Math.abs(pSample1[i]);
                 double yLine = MathUtil.map(amp, 0f, 1f, (float) HEIGHT, 0f);
                 gc.drawLine(i + offset, HEIGHT, i + offset, (int)yLine);
+            }
+
+            for (int i = 0, offset = 0; i < pSample1.length && i+offset <= canvasWidth; i++, offset += 1){
+                float amp = Math.abs(pSample1[i]);
+                double yLine = MathUtil.map(amp, 0f, 1f, (float) HEIGHT, 0f);
+                gc.drawLine((canvasWidth*2 - i) - offset, HEIGHT, (canvasWidth*2 - i) - offset, (int)yLine);
             }
 //            System.out.println(Arrays.toString(pSample1));
             // TODO: jtransforms
         }
 
-        // codes for image
+        if (recordSession){
+            // codes for image
+            int radius = 256;
+            float value = bassMean;
 
-        int radius = 256;
-        float value = bassMean;
-
-        Image imageReact = assets_.scaleImage(assets_.coolio, (int)(radius + radius * 2 * Math.abs(value)),
-                (int)(radius + radius * 2 * Math.abs(value)));
-        /*Image imageReact = assets_.scaleImage(imageReactMain, (int)(radius + radius * 2 * Math.abs(value)),
+            Image imageReact = assets_.scaleImage(imageReactMain, (int)(radius + radius * 2 * Math.abs(value)),
+                    (int)(radius + radius * 2 * Math.abs(value)));
+            /*Image imageReact = assets_.scaleImage(imageReactMain, (int)(radius + radius * 2 * Math.abs(value)),
                 (int)(radius + radius * 2 * Math.abs(value)));*/
-        // gc.fillRect(0, 0, (int)(radius + radius * 2 * Math.abs(value)),
-        // (int)(radius + radius * 2 * Math.abs(value)));
+            // gc.fillRect(0, 0, (int)(radius + radius * 2 * Math.abs(value)),
+            // (int)(radius + radius * 2 * Math.abs(value)));
 
-        int imageWidth = imageReact.getWidth(null);
-        int imageHeight = imageReact.getHeight(null);
+            int imageWidth = imageReact.getWidth(null);
+            int imageHeight = imageReact.getHeight(null);
 
-        /*gc.drawImage(imageReact, (WIDTH - WIDTH/2) - (imageWidth - imageWidth/2),
-                (HEIGHT - HEIGHT/2) - (imageHeight - imageHeight/2), null);*/
+            gc.drawImage(imageReact, (WIDTH - WIDTH/2) - (imageWidth - imageWidth/2),
+                    (HEIGHT - HEIGHT/2) - (imageHeight - imageHeight/2), null);
+        }
     }
+
+    public static BufferedImage imageReactMain = new BufferedImage(32, 32, BufferedImage.TYPE_INT_ARGB);
 
     /*BufferedImage imageReactMain;
 
@@ -219,6 +230,43 @@ public class betterosc_ extends gameobject_ implements KeyListener {
             e.printStackTrace();
         }
     }*/
+
+    @Override
+    public void keyReleased(KeyEvent e) {
+        int key = e.getKeyCode();
+        // he he boi visualizer codes
+        if (key == KeyEvent.VK_F8) {
+            if (stereo)
+                stereo = false;
+            else stereo = true;
+        }
+        // record switch
+        if (recordSession){
+            if (key == KeyEvent.VK_SPACE){
+                if (game_.recordVideo) {
+                    recordVideo = false;
+                    audioplayer_.getMusic("record").stop();
+                    game_.writer.close(); // stop
+                    System.out.println("Recording stopped...");
+                }
+                else {
+                    // music
+                    audioplayer_.getMusic("record").play();
+                    // xuggler shit, run this first and once
+                    Dimension screenBounds = new Dimension(WIDTH, HEIGHT);
+                    game_.writer.addVideoStream(0, 0, ICodec.ID.CODEC_ID_MPEG4,
+                            screenBounds.width, screenBounds.height);
+                    game_.startTime = System.nanoTime();
+                    recordVideo = true;
+                    System.out.println("Recording started...");
+                }
+
+            }
+        }
+
+        if (key == KeyEvent.VK_RIGHT)
+            fastForward = false;
+    }
 
     @Override
     public Rectangle getBounds() {
@@ -281,42 +329,5 @@ public class betterosc_ extends gameobject_ implements KeyListener {
         int key = e.getKeyCode();
         if (key == KeyEvent.VK_RIGHT)
             fastForward = true;
-    }
-
-    @Override
-    public void keyReleased(KeyEvent e) {
-        int key = e.getKeyCode();
-        // he he boi visualizer codes
-        if (key == KeyEvent.VK_F10) {
-            if (stereo)
-                stereo = false;
-            else stereo = true;
-        }
-        // record switch
-        if (recordSession){
-            if (key == KeyEvent.VK_SPACE){
-                if (game_.recordVideo) {
-                    game_.recordVideo = false;
-                    game_.writer.close(); // stop
-                    System.out.println("Recording stopped...");
-                }
-                else {
-                    // xuggler shit, run this first and once
-                    Dimension screenBounds = new Dimension(WIDTH, HEIGHT);
-                    game_.writer.addVideoStream(0, 0, ICodec.ID.CODEC_ID_MPEG4,
-                            screenBounds.width/2, screenBounds.height/2);
-                    game_.startTime = System.nanoTime();
-                    game_.recordVideo = true;
-                    System.out.println("Recording started...");
-                }
-
-            }
-            // play test music
-            if (key == KeyEvent.VK_ENTER)
-                audioplayer_.getMusic("record").play();
-        }
-
-        if (key == KeyEvent.VK_RIGHT)
-            fastForward = false;
     }
 }

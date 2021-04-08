@@ -11,7 +11,8 @@ public class assets_ {
             soundiconon, soundiconoff, crazyboss, targetimage, explode, 
             portalBlue1, portalBlue2, portalBlue3, portalBlue4,
             portalRed1, portalRed2, portalRed3, portalRed4, laser, spike,
-            noob, hacker, corrupted, serponge, alien, btpou, coolio, arrow;
+            noob, hacker, corrupted, serponge, alien, btpou, coolio, arrow,
+            octo, partition, monster, glow, zig, sharp, vamp, demon, rocky, juni;
     public static Image upscaledxgamer, upscaledcrazyboss, locktargetimage, maxExplode,
             maxBlue1, maxBlue2, maxBlue3, maxBlue4,
             maxRed1, maxRed2, maxRed3, maxRed4;
@@ -35,6 +36,16 @@ public class assets_ {
         btpou = ss.grabImage(12, 8, 32, 32);
         coolio = ss.grabImage(13, 8, 32, 32);
         arrow = ss.grabImage(1, 9, 128,192);
+        octo = ss.grabImage(15, 8, 32, 32);
+        partition = ss.grabImage(14, 8, 32, 32);
+        monster = ss.grabImage(16, 8,32, 32);
+        glow = ss.grabImage(5, 9, 32, 32);
+        zig = ss.grabImage(6, 9, 32, 32);
+        vamp = ss.grabImage(7, 9, 32, 32);
+        sharp = ss.grabImage(8, 9, 32, 32);
+        demon = ss.grabImage(9, 9 ,32, 32);
+        rocky = ss.grabImage(10, 9, 32, 32);
+        juni = ss.grabImage(11, 9, 32, 32);
 
         // test for upscale
         xgamer = ss.grabImage(2, 2, 32, 32);

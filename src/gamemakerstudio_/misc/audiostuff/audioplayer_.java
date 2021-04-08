@@ -40,6 +40,9 @@ public class audioplayer_ {
     /*public static StreamPlayer streamPlayer = new StreamPlayer();
     public static Map<String, MusicTest> musicTestMap = new HashMap<>();*/
 
+    // record
+    public static String record;
+
     public static void load(String key) {
         try {
             // default music
@@ -62,16 +65,7 @@ public class audioplayer_ {
             if (!betaAudioEngine) {
                 switch (key) {
                     case "record":
-                        musicMap.put(key, new Music("C:\\Users\\ACER\\Desktop\\stuff goes here\\egypt.ogg"));
-                        // xuggler shit, run this first and once
-                        if (recordSession){
-                            Dimension screenBounds = new Dimension(WIDTH, HEIGHT);
-                            game_.writer.addVideoStream(0, 0, ICodec.ID.CODEC_ID_MPEG4,
-                                    screenBounds.width, screenBounds.height);
-                            game_.startTime = System.nanoTime();
-                            game_.recordVideo = true;
-                            System.out.println("Recording started...");
-                        }
+                        musicMap.put(key, new Music("C:\\Users\\ACER\\Desktop\\stuff goes here\\" + record + ".ogg"));
                         break;
                     case "dead_meme":
                         musicMap.put(key, new Music("resources_/music_/dead meme.ogg"));

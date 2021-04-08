@@ -1064,7 +1064,7 @@ public class window_ extends WindowAdapter implements KeyListener {
             case 480:
                 return "npesta approved";
             case 481:
-                return "how much is a 10$ uber ride";
+                return "how much is a $10 uber ride";
             case 482:
                 return "how heavy is a 10kg one";
             case 483:
@@ -1076,17 +1076,17 @@ public class window_ extends WindowAdapter implements KeyListener {
             case 486:
                 return "i will do anything to eat a meal by the power of slaps";
             case 487:
-                return "";
+                return "a small bug in nature's design";
             case 488:
-                return "";
+                return "minor glitch in the matrix";
             case 489:
-                return "";
+                return "the computer business is too competitive";
             case 490:
-                return "";
+                return "it takes two to make it outta sight";
             case 491:
-                return "";
+                return "salutations and such";
             case 492:
-                return "";
+                return "you did an amazing turron here";
             case 493:
                 return "";
             case 494:
