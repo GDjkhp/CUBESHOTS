@@ -3,13 +3,8 @@ A rhythmic bullet hell game written in Java (based from the tutorial and game Wa
 \
 [CUBESHOTS PORTABLE](https://github.com/GDjkhp/CUBESHOTS_PORTABLE) (for Android and HTML)\
 
-<figure class="video_container">
-  <iframe src="https://www.youtube.com/embed/GkitVgIIiGE" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
-
-<figure class="video_container">
-  <iframe src="https://www.youtube.com/embed/rZynls_7nAw" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
+[![Video 1](https://img.youtube.com/vi/GkitVgIIiGE/0.jpg)](https://www.youtube.com/watch?v=GkitVgIIiGE)
+[![Video 2](https://img.youtube.com/vi/rZynls_7nAw/0.jpg)](https://www.youtube.com/watch?v=rZynls_7nAw)
 
 \
 ![image 1](https://github.com/GDjkhp/CUBESHOTS/blob/main/readme%20pics/1%20attempt%20storm.PNG)\
