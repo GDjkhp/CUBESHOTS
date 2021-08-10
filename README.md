@@ -2,6 +2,15 @@
 A rhythmic bullet hell game written in Java (based from the tutorial and game Wave© by RealTutsGML).\
 \
 [CUBESHOTS PORTABLE](https://github.com/GDjkhp/CUBESHOTS_PORTABLE) (for Android and HTML)\
+
+<figure class="video_container">
+  <iframe src="https://www.youtube.com/embed/GkitVgIIiGE" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+
+<figure class="video_container">
+  <iframe src="https://www.youtube.com/embed/rZynls_7nAw" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+
 \
 ![image 1](https://github.com/GDjkhp/CUBESHOTS/blob/main/readme%20pics/1%20attempt%20storm.PNG)\
 \
@@ -23,7 +32,9 @@ A rhythmic bullet hell game written in Java (based from the tutorial and game Wa
 \
 ![image 10](https://github.com/GDjkhp/CUBESHOTS/blob/main/readme%20pics/maze.png)\
 \
-![image 11](https://github.com/GDjkhp/CUBESHOTS/blob/main/readme%20pics/julia.png)
+![image 11](https://github.com/GDjkhp/CUBESHOTS/blob/main/readme%20pics/julia.png)\
+\
+![image 12](https://github.com/GDjkhp/CUBESHOTS/blob/main/readme%20pics/raycast.png)
 # Libraries
 Java 11: https://www.oracle.com/ph/java/technologies/javase-jdk11-downloads.html/
 \
