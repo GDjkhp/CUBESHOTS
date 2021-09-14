@@ -1,4 +1,8 @@
 # CUBESHOTS
+UPDATE (9/14/21):\
+\
+old disgusting repo, check the reboot [here](https://github.com/GDjkhp/CUBESHOTS)\
+\
 A rhythmic bullet hell game written in Java (based from the tutorial and game Wave© by RealTutsGML).\
 \
 [CUBESHOTS PORTABLE](https://github.com/GDjkhp/CUBESHOTS_PORTABLE) (for Android and HTML)\
