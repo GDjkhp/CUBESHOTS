@@ -7,6 +7,7 @@ package gamemakerstudio_.world;
 
 import gamemakerstudio_.entities.*;
 import gamemakerstudio_.entities.boss.crazyboss_;
+import gamemakerstudio_.entities.particle.particlehandler_;
 import gamemakerstudio_.game_;
 import gamemakerstudio_.gui.hud2_;
 import gamemakerstudio_.gui.hud_;
@@ -4329,7 +4330,7 @@ public class levels_ implements MouseMotionListener, MouseListener, KeyListener,
                     g.drawRect(boxBounds.x, boxBounds.y, boxBounds.width, boxBounds.height);
                     // center
                     double widthFix;
-                    widthFix = (25) - (game.getTextWidth(g, String.valueOf(number))/2);
+                    widthFix = (25) - (game.getTextWidth(g, String.valueOf(number))/2f);
                     // number
                     g.drawString(String.valueOf(number), (int)(xCoord + widthFix), yCoord + 30);
                     number++;
@@ -4460,6 +4461,8 @@ public class levels_ implements MouseMotionListener, MouseListener, KeyListener,
         handler.addObject(new portalred_(r.nextInt(game.WIDTH-64), r.nextInt(game.HEIGHT-64), ID.PortalRed,
                 handler,0, 0));
 
+        // stop random gen music
+        audioplayer_.stopRandomGenMusic();
     }
     public int levelTick = 0; // responsible for time
 
@@ -4473,8 +4476,7 @@ public class levels_ implements MouseMotionListener, MouseListener, KeyListener,
             handler.clearEnemies();
             if (game.customTicksBoolean) game.customTicksMethod();
             else {
-                for (int i = 1; i <= 50; i++)
-                    handler.addObject(new spicymenu_(r.nextInt(game.WIDTH - 20), r.nextInt(game.HEIGHT - 20), ID.Spicy, handler));
+                handler.addObject(new particlehandler_(0, 0, ID.ParticleHandler, handler, game));
             }
         }
     }

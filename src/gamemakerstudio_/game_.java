@@ -10,6 +10,7 @@ import com.xuggle.mediatool.ToolFactory;
 import gamemakerstudio_.entities.*;
 import gamemakerstudio_.entities.boss.crazyboss_;
 import gamemakerstudio_.entities.experimental.*;
+import gamemakerstudio_.entities.particle.particlehandler_;
 import gamemakerstudio_.gui.*;
 import gamemakerstudio_.misc.*;
 import gamemakerstudio_.misc.audiostuff.audioplayer_;
@@ -27,6 +28,7 @@ import java.awt.*;
 import java.awt.geom.AffineTransform;
 import java.awt.image.*;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -40,14 +42,19 @@ public class game_ extends GameEngine {
 
     // lezgo?!
     public static void main(String[] args) {
+        System.out.println("CUBESHOTS [Version X] by KENNEDY");
         System.out.println("game_ Engine [Version 1.0] by KENNEDY");
-        System.out.println("(c) 2020 The Karakters Kompany, game_ Engine. All rights reserved.");
+        System.out.println("(c) 20XX The Karakters Kompany, " +
+                "on behalf of the people that make silly and weird games. All rights reserved.");
 
         new game_();
     }
 
     // dimension
-    public static int WIDTH = 1360/2, HEIGHT = 720;
+    public static int defaultWIDTH = 1360/2, defaultHEIGHT = 720; // FIXME: default height is 720, changed to 480 to follow screen resolutions guide
+    public static int WIDTH = defaultWIDTH, HEIGHT = defaultHEIGHT;
+    // use this for amogus
+    // public static int WIDTH = 525, HEIGHT = 651;
     // the game state
     public static STATE gameState = STATE.Load; // default is STATE.Load
     // difficulty
@@ -74,8 +81,14 @@ public class game_ extends GameEngine {
     public static boolean mouseCursor = false; // info stuff
     public static boolean gridLines = false; // info stuff
     public static boolean recordVideo = false; // this is fake
-    public static boolean recordAudio = false; // this is fake
+    public static boolean recordAudio = false; // FIXME: recording audio only works while starting the game, see XtAudio.java, line 122, edit: some changes were made but haven't tested yet
     public static boolean recordSession = false; // for recording purposes only
+    public static boolean useXtAudio = true; // sometimes unstable, lagging
+    public static boolean fullscreen = false; // not actually fullscreen, but windowed fullscreen
+    public static boolean useCamera = true; // for dev purposes
+
+    // menu screensaver
+    public static particlehandler_.PARTICLE currentParticle = particlehandler_.PARTICLE.Spicy; // can be chosen by the user
 
     // var stuff
     public Random r = new Random();
@@ -85,7 +98,7 @@ public class game_ extends GameEngine {
 
     // enter classes here
     public handler_ handler = new handler_();
-    public hud_ hud = new hud_(handler, this);
+    public hud_ hud = new hud_();
     public hud2_ hud2 = new hud2_();
     public spawn_ spawner = new spawn_(handler, hud, this);
     public shop_ shop = new shop_(handler, hud, hud2, this);
@@ -103,12 +116,14 @@ public class game_ extends GameEngine {
     public BufferedImageLoader loader = new BufferedImageLoader();
     public static BufferedImage spritesheet;
 
-    // xuggler
+    // TODO: optimize xuggler by making recording optional class, see testgame_.java class ScreenRecording
     private static final double FRAME_RATE = 50;
 
     private static final int SECONDS_TO_RUN_FOR = 20;
 
-    private static final String outputFilename = "C:\\Users\\ACER\\Desktop\\mydesktop.mp4";
+    static Date now = new Date(); // TODO: implement date in naming scheme
+
+    private static final String outputFilename = "C:\\Users\\ACER\\Desktop\\record\\mydesktop.mp4";
 
     private static Dimension screenBounds = new Dimension(WIDTH, HEIGHT);
 
@@ -127,13 +142,14 @@ public class game_ extends GameEngine {
         System.out.println("==============================================================");
         System.out.println("loading window: " + WIDTH + "x" + HEIGHT);
         window = new window_(WIDTH, HEIGHT, "game_ alpha edition v1", this, handler);
+        start(); // start the game after showing window
 
         // init textures
         stringsforloading = "loading textures...";
         System.out.println(stringsforloading);
         // assets
         spritesheet = loader.loadImage("resources_/image_/gamespritesheet.png");
-        assets_.init();
+        assets_.init(spritesheet);
         loadstate += 25;
 
         // classes with textures
@@ -161,7 +177,7 @@ public class game_ extends GameEngine {
         // handler.addObject(new mandelbrot_(0, 0, ID.Mandelbrot));
 
 //        handler.addObject(new evenbetterosc_(0, 0, ID.OSC));
-//        handler.addObject(new camera_(0, 0, ID.NULL, this));
+        if (useCamera) handler.addObject(new camera_(0, 0, ID.NULL, this));
 
         // draw the smallest first
         /*handler.addObject(new rendertexture_(WIDTH - WIDTH/2, HEIGHT - HEIGHT/2, ID.NULL, WIDTH/2, HEIGHT/2, 0, 0));
@@ -197,6 +213,8 @@ public class game_ extends GameEngine {
         stringsforloading = "loading sounds...";
         System.out.println(stringsforloading);
         System.out.println("==============================================================");
+        audioplayer_ ap = new audioplayer_();
+        ap.initPoll();
         audioplayer_.load("");
         loadstate += 25;
 
@@ -206,22 +224,24 @@ public class game_ extends GameEngine {
 
         if (CLEAR){
             // record vars
-            recordSession = true;
-            audioplayer_.record = "voice";
-            betterosc_.imageReactMain = assets_.demon;
-            betterosc_.stereo = false; // true = wave, false = bar
+            recordSession = false;
+            audioplayer_.record = "happy"; // i disabled automatic audio playback, see KeyInput.java record switch
+            betterosc_.imageReactMain = assets_.rocky;
+            betterosc_.stereo = true; // true = wave, false = bar
 
             // noob kill
             gameState = STATE.Edit;
             handler.clearEnemies();
-            // to kill players, use this instead
-            hud_.HEALTH = 0;
-            hud2_.HEALTH = 0;
-            hideHud = true;
 
             // custom kill
             if (!recordSession)
                 handler.removeAllSelectedObjects(ID.OSC);
+            else {
+                // to kill players, use this instead
+                hud_.HEALTH = 0;
+                hud2_.HEALTH = 0;
+                hideHud = true;
+            }
 
             // spawn codes here
             // handler.addObject(new pathfinder_(0, 0, ID.Pathfinder, this));
@@ -231,10 +251,16 @@ public class game_ extends GameEngine {
             // handler.addObject(new julia_(0, 0, ID.Julia));
             // handler.addObject(new perlinnoiseterraringen2d_(0, 0, ID.NULL));
             // handler.addObject(new tvstaticnoise_(0, 0, ID.NULL));
+
+            // test record
+            /*recordSession = true;
+            handler.addObject(new pathfinder_(0, 0, ID.NULL, this));*/
         }
 
         // weird thread sleep code for new audio capture engine
-        new XtAudio();
+        if (useXtAudio) new XtAudio();
+        else System.out.println("Xt Audio was not used...");
+        doneLoadingCodes();
     }
 
     public static void doneLoadingCodes(){
@@ -249,7 +275,8 @@ public class game_ extends GameEngine {
                 music = true;
                 sfx = true;
             }
-            if (gameState != STATE.Edit && music) audioplayer_.getMusic("music").loop();
+            // if (gameState != STATE.Edit && music) audioplayer_.getMusic("music").loop();
+            if (gameState != STATE.Edit && music) audioplayer_.playRandomGenMusic();
         }
     }
     // TODO: implement this to game engine, also fix lag
@@ -405,15 +432,11 @@ public class game_ extends GameEngine {
 
         // main render
 
-        /*rendertest.render(g);
-
-        if (loadstate == 100) tiles_.tilesarray[1].render(g, 0, 0);
-        if (loadstate == 100) world.render(g);*/
-
         // camera codes, i like this part
         Graphics2D g2d = (Graphics2D)g;
         AffineTransform at = g2d.getTransform();
 
+        // just white canvas, to clean excess graphics
         g.fillRect(0, 0, WIDTH, HEIGHT);
 
         // pre camera codes
@@ -426,6 +449,13 @@ public class game_ extends GameEngine {
         // bg
         g.setColor(Color.DARK_GRAY);
         g.fillRect(0, 0, WIDTH, HEIGHT);
+
+        /*rendertest.render(g);
+
+        if (loadstate == 100) tiles_.tilesarray[1].render(g, 0, 0);
+        if (loadstate == 100) world.render(g);*/
+
+        // g.drawImage(spritesheet, 0, 0, null);
 
         // grid
         if (gridLines){
@@ -519,8 +549,10 @@ public class game_ extends GameEngine {
             g.drawString("paused_", WIDTH / 2 - getTextWidth(g, "paused_")/2, HEIGHT / 2);
         }
 
+        // get every graphics to be rendered at outer layer
         g = bs.getDrawGraphics();
 
+        // inner layer
         if (game_.backgroundRender){
             // grids (background), aka n00b l00p
             g.setColor(Color.black);
@@ -546,15 +578,13 @@ public class game_ extends GameEngine {
 
         // xuggler shit, run this everytime
         if (recordVideo && writer.isOpen()){
-            BufferedImage bgrScreen = convertToType(image,BufferedImage.TYPE_3BYTE_BGR);
+            BufferedImage bgrScreen = convertToType(image, BufferedImage.TYPE_3BYTE_BGR);
             writer.encodeVideo(0, bgrScreen, System.nanoTime() - startTime, TimeUnit.NANOSECONDS);
         }
 
         // dispose properly
         g.dispose();
     }
-
-
 
     public static BufferedImage convertToType(BufferedImage sourceImage, int targetType) {
 
@@ -590,6 +620,7 @@ public class game_ extends GameEngine {
     }
 
     // DO NOT USE! IT WAS WEIRD AF!, IT'S LIKE POKEMON AND EARTHBOUND CAMERA!
+    // THE ASSETS DOES THE MOVING AND NOT THE PLAYER!
     public gamecamera_ getGameCamera() {
         return gamecamera;
     }
@@ -614,8 +645,7 @@ public class game_ extends GameEngine {
         handler.clearEnemies();
         if (customTicksBoolean) customTicksMethod();
         else {
-            for (int i = 1; i <= 50; i++)
-                handler.addObject(new spicymenu_(r.nextInt(WIDTH - 20), r.nextInt(HEIGHT - 20), ID.Spicy, handler));
+            handler.addObject(new particlehandler_(0, 0, ID.ParticleHandler, handler, this));
         }
     }
     public void endCodesBeta() {
@@ -634,7 +664,7 @@ public class game_ extends GameEngine {
         } else {
             if (restartCooldown == 100) {
                 if (gameState == STATE.GameBeta && audioplayer_.currentMusic != "")
-                    audioplayer_.getMusic(audioplayer_.currentMusic).stop();
+                    audioplayer_.getMusic("null").play();
                 handler.removeAllSelectedObjects(ID.Trail);
             }
             restartCooldown--;
@@ -652,7 +682,7 @@ public class game_ extends GameEngine {
         // restart
         if ((gameState == STATE.GameBeta || gameState == STATE.End) && currentGameStateIsBeta) {
             levels.resetMethod();
-            if (audioplayer_.currentMusic != "") audioplayer_.getMusic(audioplayer_.currentMusic).stop();
+            if (audioplayer_.currentMusic != "") audioplayer_.getMusic("null").play();
             if (music) audioplayer_.getMusic(audioplayer_.currentMusic).play(); // library change error
             if (sfx) audioplayer_.getSound("click_sound").play();
         }

@@ -13,13 +13,10 @@ public class conwaysgameoflife_ extends gameobject_ implements MouseMotionListen
     private static final int BLOCK_SIZE = 5; // default is 10
     private ArrayList<Point> point = new ArrayList<Point>(0);
     Dimension d_gameBoardSize = new Dimension(game_.WIDTH/BLOCK_SIZE-2, game_.HEIGHT/BLOCK_SIZE-2);
-    // classes
-    game_ game;
 
     public conwaysgameoflife_(float x, float y, ID id, game_ game) {
         super(x, y, id);
         randomlyFillBoard(50);
-        this.game = game;
         game.addKeyListener(this);
         game.addMouseMotionListener(this);
         game.addMouseListener(this);

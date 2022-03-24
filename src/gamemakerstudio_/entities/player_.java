@@ -5,6 +5,7 @@
  */
 package gamemakerstudio_.entities;
 
+import gamemakerstudio_.entities.particle.trail_;
 import gamemakerstudio_.game_;
 import gamemakerstudio_.gui.hud_;
 import gamemakerstudio_.misc.*;
@@ -162,7 +163,7 @@ public class player_ extends gameobject_ {
             // snake portal
             /*if (x <= 0) x = game_.WIDTH - 30;
             else if (x >= game_.WIDTH - 30) x = 0;
-            else if (y <= 0) y = game_.HEIGHT - 30;
+            if (y <= 0) y = game_.HEIGHT - 30;
             else if (y >= game_.HEIGHT - 30) y = 0;*/
         }
         

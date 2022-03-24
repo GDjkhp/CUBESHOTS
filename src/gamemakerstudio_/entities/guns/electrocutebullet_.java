@@ -1,7 +1,7 @@
 package gamemakerstudio_.entities.guns;
 
 import gamemakerstudio_.entities.RangeArea;
-import gamemakerstudio_.entities.trail_;
+import gamemakerstudio_.entities.particle.trail_;
 import gamemakerstudio_.game_;
 import gamemakerstudio_.misc.entitystuff.ID;
 import gamemakerstudio_.misc.graphicsstuff.assets_;

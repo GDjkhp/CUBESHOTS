@@ -1,5 +1,6 @@
 package gamemakerstudio_.entities;
 
+import gamemakerstudio_.entities.particle.trail_;
 import gamemakerstudio_.game_;
 import gamemakerstudio_.gui.hud2_;
 import gamemakerstudio_.gui.hud_;

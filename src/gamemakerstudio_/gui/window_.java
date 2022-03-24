@@ -59,7 +59,6 @@ public class window_ extends WindowAdapter implements KeyListener {
         if (obfuscatedChance == 1) obfuscated = true;
 
         this.handler = handler;
-        this.game = game;
 
         game.addKeyListener(this);
 
@@ -79,7 +78,8 @@ public class window_ extends WindowAdapter implements KeyListener {
         frame.setVisible(true);
         frame.setIconImage(icon.getImage());
 
-        game.start();
+        // moved at game_.java
+        // game.start();
     }
     public void windowClosing(WindowEvent e) {
         if (game_.JOptionPaneOption) {
@@ -103,6 +103,7 @@ public class window_ extends WindowAdapter implements KeyListener {
         frame.setTitle("CUBESHOTS: " + randomSplash(randInt));
     }
 
+    // prepare to cringe
     public String randomSplash(int randInt) {
         switch (randInt) {
             case 1:
@@ -176,7 +177,7 @@ public class window_ extends WindowAdapter implements KeyListener {
             case 35:
                 return "pickle rick!";
             case 36:
-                return "Why Is EVERYONE Singing Baka Mitai?";
+                return "outdated"; // Why Is EVERYONE Singing Baka Mitai?
             case 37:
                 return "the cake is a lie";
             case 38:
@@ -200,9 +201,9 @@ public class window_ extends WindowAdapter implements KeyListener {
             case 47:
                 return "FBI OPEN UP!";
             case 48:
-                return "doge and cheems and walter";
+                return "dogelore"; // doge and cheems and walter
             case 49:
-                return "i like fire trucks and moster trucks";
+                return "dogelore"; // i like fire trucks and moster trucks
             case 50:
                 return "kenos npestaposting";
             case 51:
@@ -212,13 +213,13 @@ public class window_ extends WindowAdapter implements KeyListener {
             case 53:
                 return "E";
             case 54:
-                return "can i get uhhhh, lamp";
+                return "yo can i get uhhhh, lamp";
             case 55:
                 return "sj8Sg8qnjOg"; // the golden ratio
             case 56:
                 return "dQw4w9WgXcQ";
             case 57:
-                return "UCrHkYaEEXKoK57GAwyC5JTg";
+                return "UCrHkYaEEXKoK57GAwyC5JTg"; // ytp channel?
             case 58:
                 return "The Mandelbrot Set";
             case 59:
@@ -328,7 +329,7 @@ public class window_ extends WindowAdapter implements KeyListener {
             case 111:
                 return "wanted: PROgrammer";
             case 112:
-                return String.valueOf(game.gameState);
+                return String.valueOf(game_.gameState);
             case 113:
                 return "[YTP]";
             case 114:
@@ -386,7 +387,7 @@ public class window_ extends WindowAdapter implements KeyListener {
             case 140:
                 return "searching for digital chocolate's forgotten pc games";
             case 141:
-                return "there are 3 impostors among us";
+                return "food broke";
             case 142:
                 return "perfectly unbalanced game";
             case 143:
@@ -402,13 +403,13 @@ public class window_ extends WindowAdapter implements KeyListener {
             case 148:
                 return "there you are";
             case 149:
-                return "lol is lol backwards, alright i'mma stop now";
+                return "lol is lol backwards? did robtop said that?";
             case 150:
                 return "i did not hit her";
             case 151:
                 return "music used was copyright by it's owners, i think";
             case 152:
-                return "robtop, pls send me newgrounds api for music";
+                return "robtop, pls send me newgrounds api db for music";
             case 153:
                 return "GOTY Edition";
             case 154:
@@ -418,19 +419,19 @@ public class window_ extends WindowAdapter implements KeyListener {
             case 156:
                 return "this game suck";
             case 157:
-                return "creating music was harder than i thought";
+                return "making music was harder than i thought";
             case 158:
-                return "i hate this place";
+                return "i hate this place"; // now i'm not
             case 159:
                 return "i hate everything";
             case 160:
                 return "raster vs. vector";
             case 162:
-                return "can't install unity due to storage capacity problems";
+                return "can't install unity due to storage capacity problems"; // guess what i already did
             case 163:
                 return "@Override is optional, i think";
             case 164:
-                return "press f4 to go to setup";
+                return "press f2 to go to setup"; // why this was f4?
             case 165:
                 return "press f13 to reveal a secret";
             case 166:
@@ -448,19 +449,19 @@ public class window_ extends WindowAdapter implements KeyListener {
             case 172:
                 return "android version soon";
             case 173:
-                return "marquee tag";
+                return "marquee tag"; // make this marquee anim
             case 174:
                 return "tinnitus";
             case 175:
                 return "nocebo effect";
             case 176:
-                return "nothing, and me, nothing, nothing, no more";
+                return "nothing, and me, nothing, nothing, no more"; // are you a nihilist?
             case 177:
                 return "libgdx ported this game to android";
             case 178:
                 return "send conway's game of life patterns";
             case 179:
-                return "2.2 when";
+                return "2.2 when"; // sneak peek out now
             case 180:
                 return "impossible";
             case 181:
@@ -470,7 +471,7 @@ public class window_ extends WindowAdapter implements KeyListener {
             case 183:
                 return "solves the halting problem using the famous turing machine";
             case 184:
-                return "I've gotta take a little time";
+                return "I've gotta take a little time"; // i wanna know what love is
             case 185:
                 return "pet the crewmate";
             case 186:
@@ -488,7 +489,7 @@ public class window_ extends WindowAdapter implements KeyListener {
             case 192:
                 return "the kee games quiz show font released!";
             case 193:
-                return "you had a goal, but not that many";
+                return "you had a goal, but not that many"; // notorious big
             case 194:
                 return "load multiplier included";
             case 195:
@@ -508,11 +509,11 @@ public class window_ extends WindowAdapter implements KeyListener {
             case 202:
                 return "felix, the meme lord behind youtube";
             case 203:
-                return "i can't be touched";
+                return "add something here"; // i can't be touched
             case 204:
                 return "don't blame me, blame your side";
             case 205:
-                return "ninja cops";
+                return "ninja cops"; // new game idea?
             case 206:
                 return "what just happened?";
             case 207:
@@ -572,13 +573,13 @@ public class window_ extends WindowAdapter implements KeyListener {
             case 234:
                 return "laser polygon";
             case 235:
-                return "upload barah bonaks";
+                return "uhh cringe"; // upload barah bonaks
             case 236:
                 return "secret tunnel";
             case 237:
                 return "for dummies";
             case 238:
-                return "pop the cherry"; // illegal
+                return "pop the cherry"; // illegal, spanish inquisition
             case 239:
                 return "hail santa";
             case 240:
@@ -634,7 +635,7 @@ public class window_ extends WindowAdapter implements KeyListener {
             case 265:
                 return "excuse me, princess";
             case 266:
-                return "hit 'em in the pancreas";
+                return "hit 'em in the pancreas"; // uhh i wanna eat your pancreas?
             case 267:
                 return "check out the closed instruction book";
             case 268:
@@ -652,7 +653,7 @@ public class window_ extends WindowAdapter implements KeyListener {
             case 274:
                 return "hey you, get out of my cloud";
             case 275:
-                return "it's been one of those days";
+                return "it's been one of those days"; // might remove
             case 276:
                 return "you're the best player, ever";
             case 277:
@@ -750,7 +751,7 @@ public class window_ extends WindowAdapter implements KeyListener {
             case 323:
                 return "#POTATO451";
             case 324:
-                return "127142";
+                return "127142"; // what the hell is this number? EDIT: found it, dictionary.txt line 127142
             case 325:
                 return "acoustic fingerprinting and query by humming";
             case 326:
@@ -758,9 +759,9 @@ public class window_ extends WindowAdapter implements KeyListener {
             case 327:
                 return "B R E A T H T A K I N G";
             case 328:
-                return "the absence of evidence is not the evidence of absence  "; // might fix this
+                return "the absence of evidence is not the evidence of absence"; // might fix this
             case 329:
-                return "ugh fine i guess you are my little pogchamp"; // delete this
+                return "ugh fine i guess you are my little pogchamp"; // delete this EDIT: i've watched kill la kil, it was good
             case 330:
                 return "machine learning and neural networks";
             case 331:
@@ -910,7 +911,7 @@ public class window_ extends WindowAdapter implements KeyListener {
             case 403:
                 return "in the future, humor will be randomly generated";
             case 404:
-                return "ok, 19 dollar fornite card, who wants it?";
+                return "#1 victory royale"; // ok, 19 dollar fortnite card, who wants it?
             case 405:
                 return "and yes, i'm giving it away";
             case 406:
@@ -942,15 +943,15 @@ public class window_ extends WindowAdapter implements KeyListener {
             case 419:
                 return "Pollyanna";
             case 420:
-                return "it's not over";
+                return "(c) 20XX The Karakters Kompany. on behalf of the people that make silly and weird games. All rights reserved.";
             case 421:
-                return "till it's over";
+                return "it's not over, till it's over";
             case 422:
                 return "a game, inside a game, inside a game";
             case 423:
                 return "drawing text with wrapping and text alignment";
             case 424:
-                return "slice of life";
+                return "slice of life"; // best genre
             case 425:
                 return "inspired from the art of almighty Bob Ross";
             case 426:
@@ -1088,26 +1089,1026 @@ public class window_ extends WindowAdapter implements KeyListener {
             case 492:
                 return "you did an amazing turron here";
             case 493:
-                return "";
+                return "also try Before Your Eyes";
             case 494:
-                return "";
+                return "life is like a dream now, let's kill the boss with me now"; // reference to a newgrounds contest, this is where the game's reboot happens
             case 495:
-                return "";
+                return "drop the beat, drop the beat";
             case 496:
-                return "";
+                return "flipping bits using cosmic rays";
             case 497:
-                return "";
+                return "more efforts to break your records";
             case 498:
-                return "";
+                return "a whole day supply of vitamin c";
             case 499:
-                return "";
+                return "smells sour like funky";
             case 500:
+                return "what da dog doin?";
+            case 501:
+                return "dedicated to Daisuke \"Pixel\" Amaya";
+            case 502:
+                return "we bring the war to them";
+            case 503:
+                return "blah blah blah coolswag";
+            case 504:
+                return "ouch, a time traveler walks into a bar";
+            case 505:
+                return "contains fragments of code from polybius";
+            case 506:
+                return "so i started watching anime...";
+            case 507:
+                return "bruh";
+            case 508:
+                return "amogus";
+            case 509:
+                return "dedicated to ONE";
+            case 510:
+                return "operation soda steal";
+            case 511:
+                return "09/10/2021";
+            case 512:
+                return "printer lore"; // so you don't have to cut me off
+            case 513:
+                return "kid amogus";
+            case 514:
+                return "stun amogus";
+            case 515:
+                return "STOP POSTING ABOUT AMONG US";
+            case 516:
+                return "i forgor 💀";
+            case 517:
+                return "today we're going to talk about the pixels";
+            case 518:
+                return "steve's sigma grindset";
+            case 519:
+                return "industrial society and it's future by theodore john kaczynski";
+            case 520:
+                return "what'chu know about rolling down in the deep";
+            case 521:
+                return "think mark";
+            case 522:
+                return "sheesh";
+            case 523:
+                return "rip el risitas";
+            case 524:
+                return "drip cars";
+            case 525:
+                return "youtube kids at 3 am";
+            case 526:
+                return "4/24/2021"; // ah yes the josh fight
+            case 527:
+                return "fans explain why this game was so bad yet so good"; // horriblesubs
+            case 528:
+                return "⚠ TRADE OFFER ⚠";
+            case 529:
+                return "lezgo"; // dababy
+            case 530:
+                return "snap back to reality";
+            case 531:
+                return "been's spendin' most their lives livin in the gangsta's paradise";
+            case 532:
+                return "1 + 2 = 3";
+            case 533:
+                return "power and the money, money and the power";
+            case 534:
+                return "minute after minute, hour after hour";
+            case 535:
+                return "ok $19 fortnite card who wants it?";
+            case 536:
+                return "64 32 16 8 4 2 1 1/2 1/4 the wrist game";
+            case 537:
+                return "konichiwa sekai";
+            case 538:
+                return "wassup can a loc come up in your crib?";
+            case 539:
+                return "man"; // juan
+            case 540:
+                return "you are under attack from the sun and its gamma waves";
+            case 541:
+                return "we now return to gangstalicious resurrection";
+            case 542:
+                return "god got involved, god is gangsta";
+            case 543:
+                return "thank you for your attention";
+            case 544:
+                return "what's done is done, let's be solution-oriented, u mad?";
+            case 545:
+                return "placebo effect";
+            case 546:
+                return "i programmed you to believe that";
+            case 547:
+                return "i beg your pardon";
+            case 548:
+                return "you just got saved by jesus christ";
+            case 549:
+                return "i'm in, i'm in, what's the job? i'm out, i quit, whose kidneys were these?";
+            case 550:
+                return "this game can save and change your life";
+            case 551:
+                return "free grunt";
+            case 552:
+                return "i paid good money on this game and if i don't deserve a refund, i shall take my business elsewhere"; // fix this
+            case 553:
+                return "doodly do doodly doodly do";
+            case 554:
+                return "go beyond plus ultra";
+            case 555:
+                return "dedicated to toby fox";
+            case 556:
+                return "dedicated to robtop";
+            case 557:
+                return "dedicated to markus \"notch\" persson";
+            case 558:
+                return "compassion to fellow men";
+            case 559:
+                return "last bit"; // lemkuuja
+            case 560:
+                return "drop the generation gap crap";
+            case 561:
+                return "assert dominance"; // t pose
+            case 562:
+                return "like taking candy from a baby";
+            case 563:
+                return "for the love of all that is holy"; // do not connect the red wire to the blue wire
+            case 564:
+                return "man when i played this game i was like, never again"; // and it happened again
+            case 565:
+                return "aimbot + autododge included"; // fuck anime arc
+            case 566:
+                return "asciente";
+            case 567:
+                return "chocomint is just toothpaste, change my mind";
+            case 568:
+                return "call 911 what's the number";
+            case 569:
+                return "hustle hustle muscle muscle";
+            case 570:
+                return "";
+            case 571:
+                return "";
+            case 572:
+                return "";
+            case 573:
+                return "";
+            case 574:
+                return "";
+            case 575:
+                return "";
+            case 576:
+                return "";
+            case 577:
+                return "";
+            case 578:
+                return "";
+            case 579:
+                return "";
+            case 580:
+                return "";
+            case 581:
+                return "";
+            case 582:
+                return "";
+            case 583:
+                return "";
+            case 584:
+                return "";
+            case 585:
+                return "";
+            case 586:
+                return "";
+            case 587:
+                return "";
+            case 588:
+                return "";
+            case 589:
+                return "";
+            case 590:
+                return "";
+            case 591:
+                return "";
+            case 592:
+                return "";
+            case 593:
+                return "";
+            case 594:
+                return "";
+            case 595:
+                return "";
+            case 596:
+                return "";
+            case 597:
+                return "";
+            case 598:
+                return "";
+            case 599:
+                return "";
+            case 600:
+                return "";
+            case 601:
+                return "";
+            case 602:
+                return "";
+            case 603:
+                return "";
+            case 604:
+                return "";
+            case 605:
+                return "";
+            case 606:
+                return "";
+            case 607:
+                return "";
+            case 608:
+                return "";
+            case 609:
+                return "";
+            case 610:
+                return "";
+            case 611:
+                return "";
+            case 612:
+                return "";
+            case 613:
+                return "";
+            case 614:
+                return "";
+            case 615:
+                return "";
+            case 616:
+                return "";
+            case 617:
+                return "";
+            case 618:
+                return "";
+            case 619:
+                return "";
+            case 620:
+                return "";
+            case 621:
+                return "";
+            case 622:
+                return "";
+            case 623:
+                return "";
+            case 624:
+                return "";
+            case 625:
+                return "";
+            case 626:
+                return "";
+            case 627:
+                return "";
+            case 628:
+                return "";
+            case 629:
+                return "";
+            case 630:
+                return "";
+            case 631:
+                return "";
+            case 632:
+                return "";
+            case 633:
+                return "";
+            case 634:
+                return "";
+            case 635:
+                return "";
+            case 636:
+                return "";
+            case 637:
+                return "";
+            case 638:
+                return "";
+            case 639:
+                return "";
+            case 640:
+                return "";
+            case 641:
+                return "";
+            case 642:
+                return "";
+            case 643:
+                return "";
+            case 644:
+                return "";
+            case 645:
+                return "";
+            case 646:
+                return "";
+            case 647:
+                return "";
+            case 648:
+                return "";
+            case 649:
+                return "";
+            case 650:
+                return "";
+            case 651:
+                return "";
+            case 652:
+                return "";
+            case 653:
+                return "";
+            case 654:
+                return "";
+            case 655:
+                return "";
+            case 656:
+                return "";
+            case 657:
+                return "";
+            case 658:
+                return "";
+            case 659:
+                return "";
+            case 660:
+                return "";
+            case 661:
+                return "";
+            case 662:
+                return "";
+            case 663:
+                return "";
+            case 664:
+                return "";
+            case 665:
+                return "";
+            case 666:
+                return "";
+            case 667:
+                return "";
+            case 668:
+                return "";
+            case 669:
+                return "";
+            case 670:
+                return "";
+            case 671:
+                return "";
+            case 672:
+                return "";
+            case 673:
+                return "";
+            case 674:
+                return "";
+            case 675:
+                return "";
+            case 676:
+                return "";
+            case 677:
+                return "";
+            case 678:
+                return "";
+            case 679:
+                return "";
+            case 680:
+                return "";
+            case 681:
+                return "";
+            case 682:
+                return "";
+            case 683:
+                return "";
+            case 684:
+                return "";
+            case 685:
+                return "";
+            case 686:
+                return "";
+            case 687:
+                return "";
+            case 688:
+                return "";
+            case 689:
+                return "";
+            case 690:
+                return "";
+            case 691:
+                return "";
+            case 692:
+                return "";
+            case 693:
+                return "";
+            case 694:
+                return "";
+            case 695:
+                return "";
+            case 696:
+                return "";
+            case 697:
+                return "";
+            case 698:
+                return "";
+            case 699:
+                return "";
+            case 700:
+                return "";
+            case 701:
+                return "";
+            case 702:
+                return "";
+            case 703:
+                return "";
+            case 704:
+                return "";
+            case 705:
+                return "";
+            case 706:
+                return "";
+            case 707:
+                return "";
+            case 708:
+                return "";
+            case 709:
+                return "";
+            case 710:
+                return "";
+            case 711:
+                return "";
+            case 712:
+                return "";
+            case 713:
+                return "";
+            case 714:
+                return "";
+            case 715:
+                return "";
+            case 716:
+                return "";
+            case 717:
+                return "";
+            case 718:
+                return "";
+            case 719:
+                return "";
+            case 720:
+                return "";
+            case 721:
+                return "";
+            case 722:
+                return "";
+            case 723:
+                return "";
+            case 724:
+                return "";
+            case 725:
+                return "";
+            case 726:
+                return "";
+            case 727:
+                return "";
+            case 728:
+                return "";
+            case 729:
+                return "";
+            case 730:
+                return "";
+            case 731:
+                return "";
+            case 732:
+                return "";
+            case 733:
+                return "";
+            case 734:
+                return "";
+            case 735:
+                return "";
+            case 736:
+                return "";
+            case 737:
+                return "";
+            case 738:
+                return "";
+            case 739:
+                return "";
+            case 740:
+                return "";
+            case 741:
+                return "";
+            case 742:
+                return "";
+            case 743:
+                return "";
+            case 744:
+                return "";
+            case 745:
+                return "";
+            case 746:
+                return "";
+            case 747:
+                return "";
+            case 748:
+                return "";
+            case 749:
+                return "";
+            case 750:
+                return "";
+            case 751:
+                return "";
+            case 752:
+                return "";
+            case 753:
+                return "";
+            case 754:
+                return "";
+            case 755:
+                return "";
+            case 756:
+                return "";
+            case 757:
+                return "";
+            case 758:
+                return "";
+            case 759:
+                return "";
+            case 760:
+                return "";
+            case 761:
+                return "";
+            case 762:
+                return "";
+            case 763:
+                return "";
+            case 764:
+                return "";
+            case 765:
+                return "";
+            case 766:
+                return "";
+            case 767:
+                return "";
+            case 768:
+                return "";
+            case 769:
+                return "";
+            case 770:
+                return "";
+            case 771:
+                return "";
+            case 772:
+                return "";
+            case 773:
+                return "";
+            case 774:
+                return "";
+            case 775:
+                return "";
+            case 776:
+                return "";
+            case 777:
+                return "";
+            case 778:
+                return "";
+            case 779:
+                return "";
+            case 780:
+                return "";
+            case 781:
+                return "";
+            case 782:
+                return "";
+            case 783:
+                return "";
+            case 784:
+                return "";
+            case 785:
+                return "";
+            case 786:
+                return "";
+            case 787:
+                return "";
+            case 788:
+                return "";
+            case 789:
+                return "";
+            case 790:
+                return "";
+            case 791:
+                return "";
+            case 792:
+                return "";
+            case 793:
+                return "";
+            case 794:
+                return "";
+            case 795:
+                return "";
+            case 796:
+                return "";
+            case 797:
+                return "";
+            case 798:
+                return "";
+            case 799:
+                return "";
+            case 800:
+                return "";
+            case 801:
+                return "";
+            case 802:
+                return "";
+            case 803:
+                return "";
+            case 804:
+                return "";
+            case 805:
+                return "";
+            case 806:
+                return "";
+            case 807:
+                return "";
+            case 808:
+                return "";
+            case 809:
+                return "";
+            case 810:
+                return "";
+            case 811:
+                return "";
+            case 812:
+                return "";
+            case 813:
+                return "";
+            case 814:
+                return "";
+            case 815:
+                return "";
+            case 816:
+                return "";
+            case 817:
+                return "";
+            case 818:
+                return "";
+            case 819:
+                return "";
+            case 820:
+                return "";
+            case 821:
+                return "";
+            case 822:
+                return "";
+            case 823:
+                return "";
+            case 824:
+                return "";
+            case 825:
+                return "";
+            case 826:
+                return "";
+            case 827:
+                return "";
+            case 828:
+                return "";
+            case 829:
+                return "";
+            case 830:
+                return "";
+            case 831:
+                return "";
+            case 832:
+                return "";
+            case 833:
+                return "";
+            case 834:
+                return "";
+            case 835:
+                return "";
+            case 836:
+                return "";
+            case 837:
+                return "";
+            case 838:
+                return "";
+            case 839:
+                return "";
+            case 840:
+                return "";
+            case 841:
+                return "";
+            case 842:
+                return "";
+            case 843:
+                return "";
+            case 844:
+                return "";
+            case 845:
+                return "";
+            case 846:
+                return "";
+            case 847:
+                return "";
+            case 848:
+                return "";
+            case 849:
+                return "";
+            case 850:
+                return "";
+            case 851:
+                return "";
+            case 852:
+                return "";
+            case 853:
+                return "";
+            case 854:
+                return "";
+            case 855:
+                return "";
+            case 856:
+                return "";
+            case 857:
+                return "";
+            case 858:
+                return "";
+            case 859:
+                return "";
+            case 860:
+                return "";
+            case 861:
+                return "";
+            case 862:
+                return "";
+            case 863:
+                return "";
+            case 864:
+                return "";
+            case 865:
+                return "";
+            case 866:
+                return "";
+            case 867:
+                return "";
+            case 868:
+                return "";
+            case 869:
+                return "";
+            case 870:
+                return "";
+            case 871:
+                return "";
+            case 872:
+                return "";
+            case 873:
+                return "";
+            case 874:
+                return "";
+            case 875:
+                return "";
+            case 876:
+                return "";
+            case 877:
+                return "";
+            case 878:
+                return "";
+            case 879:
+                return "";
+            case 880:
+                return "";
+            case 881:
+                return "";
+            case 882:
+                return "";
+            case 883:
+                return "";
+            case 884:
+                return "";
+            case 885:
+                return "";
+            case 886:
+                return "";
+            case 887:
+                return "";
+            case 888:
+                return "";
+            case 889:
+                return "";
+            case 890:
+                return "";
+            case 891:
+                return "";
+            case 892:
+                return "";
+            case 893:
+                return "";
+            case 894:
+                return "";
+            case 895:
+                return "";
+            case 896:
+                return "";
+            case 897:
+                return "";
+            case 898:
+                return "";
+            case 899:
+                return "";
+            case 900:
+                return "";
+            case 901:
+                return "";
+            case 902:
+                return "";
+            case 903:
+                return "";
+            case 904:
+                return "";
+            case 905:
+                return "";
+            case 906:
+                return "";
+            case 907:
+                return "";
+            case 908:
+                return "";
+            case 909:
+                return "";
+            case 910:
+                return "";
+            case 911:
+                return "";
+            case 912:
+                return "";
+            case 913:
+                return "";
+            case 914:
+                return "";
+            case 915:
+                return "";
+            case 916:
+                return "";
+            case 917:
+                return "";
+            case 918:
+                return "";
+            case 919:
+                return "";
+            case 920:
+                return "";
+            case 921:
+                return "";
+            case 922:
+                return "";
+            case 923:
+                return "";
+            case 924:
+                return "";
+            case 925:
+                return "";
+            case 926:
+                return "";
+            case 927:
+                return "";
+            case 928:
+                return "";
+            case 929:
+                return "";
+            case 930:
+                return "";
+            case 931:
+                return "";
+            case 932:
+                return "";
+            case 933:
+                return "";
+            case 934:
+                return "";
+            case 935:
+                return "";
+            case 936:
+                return "";
+            case 937:
+                return "";
+            case 938:
+                return "";
+            case 939:
+                return "";
+            case 940:
+                return "";
+            case 941:
+                return "";
+            case 942:
+                return "";
+            case 943:
+                return "";
+            case 944:
+                return "";
+            case 945:
+                return "";
+            case 946:
+                return "";
+            case 947:
+                return "";
+            case 948:
+                return "";
+            case 949:
+                return "";
+            case 950:
+                return "";
+            case 951:
+                return "";
+            case 952:
+                return "";
+            case 953:
+                return "";
+            case 954:
+                return "";
+            case 955:
+                return "";
+            case 956:
+                return "";
+            case 957:
+                return "";
+            case 958:
+                return "";
+            case 959:
+                return "";
+            case 960:
+                return "";
+            case 961:
+                return "";
+            case 962:
+                return "";
+            case 963:
+                return "";
+            case 964:
+                return "";
+            case 965:
+                return "";
+            case 966:
+                return "";
+            case 967:
+                return "";
+            case 968:
+                return "";
+            case 969:
+                return "";
+            case 970:
+                return "";
+            case 971:
+                return "";
+            case 972:
+                return "";
+            case 973:
+                return "";
+            case 974:
+                return "";
+            case 975:
+                return "";
+            case 976:
+                return "";
+            case 977:
+                return "";
+            case 978:
+                return "";
+            case 979:
+                return "";
+            case 980:
+                return "";
+            case 981:
+                return "";
+            case 982:
+                return "";
+            case 983:
+                return "";
+            case 984:
+                return "";
+            case 985:
+                return "";
+            case 986:
+                return "";
+            case 987:
+                return "";
+            case 988:
+                return "";
+            case 989:
+                return "";
+            case 990:
+                return "";
+            case 991:
+                return "";
+            case 992:
+                return "";
+            case 993:
+                return "";
+            case 994:
+                return "";
+            case 995:
+                return "";
+            case 996:
+                return "";
+            case 997:
+                return "";
+            case 998:
+                return "";
+            case 999:
+                return "";
+            case 1000:
                 return "";
             default:
                 return "";
         }
     }
-    int randomLimit = 500;
+    int randomLimit = 1000;
     int randIntFormula = r.nextInt(randomLimit) + 1;
 
     public static String title(){

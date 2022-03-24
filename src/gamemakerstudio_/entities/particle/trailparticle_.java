@@ -1,4 +1,4 @@
-package gamemakerstudio_.entities;
+package gamemakerstudio_.entities.particle;
 
 import gamemakerstudio_.misc.entitystuff.ID;
 import gamemakerstudio_.misc.entitystuff.gameobject_;

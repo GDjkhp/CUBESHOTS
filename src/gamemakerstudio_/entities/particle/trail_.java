@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gamemakerstudio_.entities;
+package gamemakerstudio_.entities.particle;
 
 import gamemakerstudio_.misc.entitystuff.ID;
 import gamemakerstudio_.misc.entitystuff.gameobject_;

@@ -13,6 +13,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Random;
 
 import static gamemakerstudio_.game_.*;
@@ -31,16 +32,13 @@ public class betterosc_ extends gameobject_ implements KeyListener {
     int colorSize = 360;
 
     int	halfCanvasHeight = HEIGHT/2;
-    int canvasWidth = 1360/2;
+    int canvasWidth = 1360; // for visualizer 2
 
     public static boolean stereo = true;
-
-    game_ game;
 
     Random r = new Random();
     public betterosc_(float x, float y, ID id, game_ game) {
         super(x, y, id);
-        this.game = game;
         game.addKeyListener(this);
     }
 
@@ -52,8 +50,14 @@ public class betterosc_ extends gameobject_ implements KeyListener {
     // new visualizer from active, flow, check this
     private ArrayList<flowparticle_> flowParticles = new ArrayList<>();
 
+    boolean renderParticles = false;
     @Override
     public void render(Graphics gc){
+        // update this for resolution change, lazy fix
+        halfCanvasHeight = HEIGHT/2;
+
+        // variables for image react, do not modify
+        // FIXME: weird values, must use frequencies instead of pcm, hint: pcm to fft
         float[] values = stereoMerge(bytesToFloats(BUFFER, 1), bytesToFloats(BUFFER, 2)); // 0
         float[] bassValues = stereoMerge(bytesToFloats(BUFFER, 1), bytesToFloats(BUFFER, 2)); // 20
 
@@ -67,28 +71,33 @@ public class betterosc_ extends gameobject_ implements KeyListener {
         bassMean /= 480.0f;
 
         Random random = new Random();
+        if (renderParticles){
+            // FIXME: move this to init, this code only run once
+            while (flowParticles.size() < 400) {
+                float randomiser = random.nextFloat();
+                float randomiser2 = random.nextFloat();
+                float multiplier = (random.nextFloat() + 1.0f) * 0.5f;
+                flowParticles.add(new flowparticle_(-20.0f * (1 - multiplier) * 2, HEIGHT * randomiser, ID.Particle,
+                        20.0f * (1 - multiplier), 20.0f * multiplier, 50.0f * multiplier,
+                        2 * (float) Math.PI * randomiser2));
+            }
 
-        while (flowParticles.size() < 400) {
-            float randomiser = random.nextFloat();
-            float randomiser2 = random.nextFloat();
-            float multiplier = (random.nextFloat() + 1.0f) * 0.5f;
-            flowParticles.add(new flowparticle_(-20.0f * (1 - multiplier) * 2, HEIGHT * randomiser, ID.Particle, 20.0f * (1 - multiplier), 20.0f * multiplier, 50.0f * multiplier, 2 * (float) Math.PI * randomiser2));
+            // FIXME: move this logic to tick() for optimization, bcz this crappy computer can't handle complicated graphics
+            for (flowparticle_ flowParticle : flowParticles) {
+                if (flowParticle.getPosX() > WIDTH + flowParticle.getRadius() * 2) {
+                    flowParticle.setX(0);
+                }
+                if (flowParticle.getPosX() < 0 - flowParticle.getRadius() * 2) {
+                    flowParticle.setX(WIDTH);
+                }
+                flowParticle.render(gc, mean, bassMean);
+                if (fastForward)
+                    flowParticle.incrementX(20.0f * (random.nextFloat() + 1.0f) * 0.5f);
+            }
         }
 
-        for (flowparticle_ flowParticle : flowParticles) {
-            if (flowParticle.getPosX() > WIDTH + flowParticle.getRadius() * 2) {
-                flowParticle.setX(0);
-            }
-            if (flowParticle.getPosX() < 0 - flowParticle.getRadius() * 2) {
-                flowParticle.setX(WIDTH);
-            }
-            flowParticle.render(gc, mean, bassMean);
-            if (fastForward)
-                flowParticle.incrementX(20.0f * (random.nextFloat() + 1.0f) * 0.5f);
-        }
-
-        /*System.out.println("\nBYTES (" + BYTES.length + "): " + Arrays.toString(BYTES));
-        System.out.println("bytesToFloats (" + bytesToFloats(BYTES).length + "): " + Arrays.toString(bytesToFloats(BYTES)));*/
+        /*System.out.println("\nBYTES (" + BUFFER.length + "): " + Arrays.toString(BUFFER));
+        System.out.println("bytesToFloats (" + bytesToFloats(BUFFER, 1).length + "): " + Arrays.toString(bytesToFloats(BUFFER, 1)));*/
 
         if (stereo) {
             float[] pSample1 = bytesToFloats(BUFFER, 1);
@@ -99,7 +108,7 @@ public class betterosc_ extends gameobject_ implements KeyListener {
             int yLast1 = (int) (pSample1[0] * (float) halfCanvasHeight)
                     + halfCanvasHeight;
             int samIncrement1 = 1;
-            for (int a = samIncrement1, c = 0; c < canvasWidth && a < pSample1.length; a += samIncrement1, c+=2) {
+            for (int a = samIncrement1, c = 0; /*c < canvasWidth && */a < pSample1.length; a += samIncrement1, c+=offset) {
                 int yNow = (int) (pSample1[a] * (float) halfCanvasHeight)
                         + halfCanvasHeight;
                 gc.drawLine(c, yLast1, c + 1, yNow);
@@ -115,14 +124,16 @@ public class betterosc_ extends gameobject_ implements KeyListener {
             int yLast2 = (int) (pSample2[0] * (float) halfCanvasHeight)
                     + halfCanvasHeight;
             int samIncrement2 = 1;
-            for (int a = samIncrement2, c = 0; c < canvasWidth && a < pSample2.length; a += samIncrement2, c+=2) {
+            for (int a = samIncrement2, c = 0; /*c < canvasWidth && */a < pSample2.length; a += samIncrement2, c+=offset) {
                 int yNow = (int) (pSample2[a] * (float) halfCanvasHeight)
                         + halfCanvasHeight;
                 gc.drawLine(c, yLast2, c + 1, yNow);
                 yLast2 = yNow;
             }
 
-            // channel 1
+            // reverse transform, do not use
+
+            /*// channel 1
             gc.setColor(Color.WHITE);
 
             int yLast1R = (int) (pSample1[0] * (float) halfCanvasHeight)
@@ -163,10 +174,12 @@ public class betterosc_ extends gameobject_ implements KeyListener {
             // join
             int yNow2 = (int) (pSample2[lastA2 + 1] * (float) halfCanvasHeight)
                     + halfCanvasHeight;
-            gc.drawLine(lastC2-2, yLast2, (lastC2-2) - 1, yNow2);
+            gc.drawLine(lastC2-2, yLast2, (lastC2-2) - 1, yNow2);*/
 
-        } else {
+        }
+        else {
             float[] pSample1 = stereoMerge(bytesToFloats(BUFFER, 1), bytesToFloats(BUFFER, 2));
+
             /*colorIndex = (colorIndex == colorSize - 1) ? 0 : colorIndex + 1;
             gc.setColor(Color.getHSBColor((float) colorIndex / 360f, 1.0f, 1.0f));
             int yLast1 = (int) (pSample1[0] * (float) halfCanvasHeight)
@@ -231,6 +244,8 @@ public class betterosc_ extends gameobject_ implements KeyListener {
         }
     }*/
 
+    // vars for visualizer 1
+    int offset = 3; // default is 2
     @Override
     public void keyReleased(KeyEvent e) {
         int key = e.getKeyCode();
@@ -240,32 +255,14 @@ public class betterosc_ extends gameobject_ implements KeyListener {
                 stereo = false;
             else stereo = true;
         }
-        // record switch
-        if (recordSession){
-            if (key == KeyEvent.VK_SPACE){
-                if (game_.recordVideo) {
-                    recordVideo = false;
-                    audioplayer_.getMusic("record").stop();
-                    game_.writer.close(); // stop
-                    System.out.println("Recording stopped...");
-                }
-                else {
-                    // music
-                    audioplayer_.getMusic("record").play();
-                    // xuggler shit, run this first and once
-                    Dimension screenBounds = new Dimension(WIDTH, HEIGHT);
-                    game_.writer.addVideoStream(0, 0, ICodec.ID.CODEC_ID_MPEG4,
-                            screenBounds.width, screenBounds.height);
-                    game_.startTime = System.nanoTime();
-                    recordVideo = true;
-                    System.out.println("Recording started...");
-                }
-
-            }
-        }
 
         if (key == KeyEvent.VK_RIGHT)
             fastForward = false;
+
+        if (key == KeyEvent.VK_EQUALS)
+            offset++;
+        if (key == KeyEvent.VK_MINUS)
+            offset--;
     }
 
     @Override

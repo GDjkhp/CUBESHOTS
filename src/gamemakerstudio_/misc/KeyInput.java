@@ -5,6 +5,7 @@
  */
 package gamemakerstudio_.misc;
 
+import com.xuggle.xuggler.ICodec;
 import gamemakerstudio_.entities.CURSOR_POINTER;
 import gamemakerstudio_.entities.RangeArea;
 import gamemakerstudio_.entities.player2_;
@@ -30,6 +31,7 @@ import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 import java.util.Random;
 
+import static gamemakerstudio_.game_.*;
 import static gamemakerstudio_.gui.window_.frame;
 
 /**
@@ -116,6 +118,37 @@ public class KeyInput extends KeyAdapter implements MouseListener {
             }
         }
 
+        // hold to escape
+        if (key == KeyEvent.VK_ESCAPE){
+            // main menu, hold to escape
+            if (game.paused){
+                holdEsc++;
+            }
+        }
+        // main menu
+        if (holdEsc == 100){
+            // reset hold counter and unpause
+            game.paused = false;
+            holdEsc = 0;
+            // go to main menu
+            // levels.isPlaying = false; // bug fix test
+            if (game.paused) game.paused = false;
+            if (audioplayer_.currentMusic != "")
+                if (audioplayer_.getMusic(audioplayer_.currentMusic) != null)
+                    if (game_.music) audioplayer_.getMusic(audioplayer_.currentMusic).pause();
+            if (game.gameState != STATE.Menu)
+                if (game_.sfx) audioplayer_.getSound("click_sound").play();
+            // end codes
+            if (game.gameState == STATE.Game || game.gameState == STATE.GameBeta) {
+                game.endCodes();
+            }
+            // xbox feature escape
+            handler.removeAllSelectedObjects(ID.CURSORSELECT);
+            game.isSelecting = false;
+            // escape, pls fix this
+            game.gameState = STATE.Menu;
+        }
+
     }
 
     public void keyReleased(KeyEvent e) {
@@ -199,12 +232,15 @@ public class KeyInput extends KeyAdapter implements MouseListener {
                 if (game.gameState == STATE.Game) {
                     if (game_.music) {
                         audioplayer_.getMusic("shop_music").loop(); // library change error
+                        audioplayer_.stopRandomGenMusic(); // library change error
                     }
                     game.gameState = STATE.Shop;
                 }
                 else if (game.gameState == STATE.Shop) {
                     if (game_.music) {
-                        audioplayer_.getMusic("music").loop(); // library change error
+                        // audioplayer_.getMusic("music").loop(); // library change error
+                        audioplayer_.getMusic("null").play(); // library change error
+                        audioplayer_.playRandomGenMusic(); // library change error
                     }
                     game.gameState = STATE.Game;
                     game.gameloopFixDeltaOff(); // gameloop fix
@@ -271,6 +307,32 @@ public class KeyInput extends KeyAdapter implements MouseListener {
 
         // misc, if paused
 
+        // record switch
+        if (recordSession){
+            if (key == KeyEvent.VK_SPACE){
+                if (game_.recordVideo) {
+                    recordVideo = false;
+                    recordAudio = false;
+                    // audioplayer_.getMusic("record").stop();
+                    game_.writer.close(); // stop
+                    System.out.println("Recording stopped...");
+                }
+                else {
+                    // music
+                    // audioplayer_.getMusic("record").play();
+                    // xuggler shit, run this first and once
+                    Dimension screenBounds = new Dimension(WIDTH, HEIGHT);
+                    game_.writer.addVideoStream(0, 0, ICodec.ID.CODEC_ID_MPEG4,
+                            screenBounds.width, screenBounds.height);
+                    game_.startTime = System.nanoTime();
+                    recordVideo = true;
+                    recordAudio = true;
+                    System.out.println("Recording started...");
+                }
+
+            }
+        }
+
         // color model
         if (key == KeyEvent.VK_F9){
             ImageProcessing.trigger();
@@ -279,12 +341,17 @@ public class KeyInput extends KeyAdapter implements MouseListener {
 
         // fullscreen
         if (key == KeyEvent.VK_F11){
-            if (game.WIDTH == 1360/2) {
+            fullscreen = !fullscreen;
+
+            if (!fullscreen) {
                 game.WIDTH = 1360;
+                game.HEIGHT = 720;
             }
             else {
-                game.WIDTH = 1360/2;
+                game.WIDTH = defaultWIDTH;
+                game.HEIGHT = defaultHEIGHT;
             }
+
             frame.setPreferredSize(new Dimension(game_.WIDTH + 16, game_.HEIGHT + 39));
             frame.setMinimumSize(new Dimension(game_.WIDTH + 16, game_.HEIGHT + 39));
             frame.setMaximumSize(new Dimension(game_.WIDTH + 16, game_.HEIGHT + 39));
@@ -292,7 +359,7 @@ public class KeyInput extends KeyAdapter implements MouseListener {
             frame.setLocationRelativeTo(null);
         }
         // smooth fix
-        if (key == KeyEvent.VK_F12){
+        if (key == KeyEvent.VK_F12) {
             if (game.smoothFix) game.smoothFix = false;
             else game.smoothFix = true;
 
@@ -302,7 +369,7 @@ public class KeyInput extends KeyAdapter implements MouseListener {
             game.lastTime = System.nanoTime();
         }
         // tp to level select
-        if (key == KeyEvent.VK_BACK_SPACE && game.gameState != STATE.Edit){
+        if (key == KeyEvent.VK_BACK_SPACE && game.gameState != STATE.Edit) {
             // modified escape code
             if (game.paused) game.paused = false;
             if (audioplayer_.currentMusic != "") // TODO: this triggers a bug when currentmusic is not null, it stops the main menu music, same as the original escape and play new music
@@ -414,26 +481,70 @@ public class KeyInput extends KeyAdapter implements MouseListener {
             // post lazy fix
             lazyFixForRandomLevels = true;
         }
-        // main menu TODO: merge pause here
+        // main menu & pause
         if (key == KeyEvent.VK_ESCAPE) {
+            // pause
             // levels.isPlaying = false; // bug fix test
-            if (game.paused) game.paused = false;
-            if (audioplayer_.currentMusic != "")
-                if (audioplayer_.getMusic(audioplayer_.currentMusic) != null)
-                    if (game_.music) audioplayer_.getMusic(audioplayer_.currentMusic).pause();
-            if (game.gameState != STATE.Menu)
+            if (game.gameState == STATE.Game || game.gameState == STATE.Edit) {
+                if (game_.paused) game_.paused = false;
+                else game_.paused = true;
+
+                game.gameloopFixDeltaOff(); // gameloop fix
                 if (game_.sfx) audioplayer_.getSound("click_sound").play();
-            // end codes
-            if (game.gameState == STATE.Game || game.gameState == STATE.GameBeta) {
-                game.endCodes();
             }
-            // xbox feature escape
-            handler.removeAllSelectedObjects(ID.CURSORSELECT);
-            game.isSelecting = false;
-            // escape, pls fix this
-            game.gameState = STATE.Menu;
+            else if (game.gameState == STATE.GameBeta) {
+                if (game.paused) {
+                    game.paused = false;
+                    if (game_.music)audioplayer_.getMusic(audioplayer_.currentMusic).resume();
+                } else {
+                    game.paused = true;
+                    if (game_.music)audioplayer_.getMusic(audioplayer_.currentMusic).pause();
+                }
+                if (game_.sfx) audioplayer_.getSound("click_sound").play();
+
+                game.gameloopFixDeltaOff(); // gameloop fix
+            } else if (game.gameState != STATE.Menu) {
+                // fix for shop
+                if (game.gameState == STATE.Shop) {
+                    if (game_.music) {
+                        // audioplayer_.getMusic("music").loop(); // library change error
+                        audioplayer_.getMusic("null").play(); // library change error
+                        audioplayer_.playRandomGenMusic(); // library change error
+                    }
+                    game.gameState = STATE.Game;
+                    game.gameloopFixDeltaOff(); // gameloop fix
+                    if (game_.sfx) audioplayer_.getSound("click_sound").play();
+
+                }
+                else {
+                    // reset hold counter and unpause
+                    game.paused = false;
+                    holdEsc = 0;
+                    // go to main menu
+                    // levels.isPlaying = false; // bug fix test
+                    if (game.paused) game.paused = false;
+                    if (audioplayer_.currentMusic != "")
+                        if (audioplayer_.getMusic(audioplayer_.currentMusic) != null)
+                            if (game_.music) audioplayer_.getMusic(audioplayer_.currentMusic).pause();
+                    if (game.gameState != STATE.Menu)
+                        if (game_.sfx) audioplayer_.getSound("click_sound").play();
+                    // end codes
+                    if (game.gameState == STATE.Game || game.gameState == STATE.GameBeta) {
+                        game.endCodes();
+                    }
+                    // xbox feature escape
+                    handler.removeAllSelectedObjects(ID.CURSORSELECT);
+                    game.isSelecting = false;
+                    // escape, pls fix this
+                    game.gameState = STATE.Menu;
+                }
+            }
         }
-        // pause
+
+        // reset counter for hold
+        holdEsc = 0;
+
+        // deprecated pause
         if (key == KeyEvent.VK_P) {
             // levels.isPlaying = false; // bug fix test
             if (game.gameState == STATE.Game || game.gameState == STATE.Edit) {
@@ -458,6 +569,8 @@ public class KeyInput extends KeyAdapter implements MouseListener {
         }
     }
 
+    int holdEsc = 0;
+
     // i did this to lazily fix r button, which suck
     public void tick(){
         if(lazyFixForRandomLevels && delayCount != 0){
@@ -466,9 +579,7 @@ public class KeyInput extends KeyAdapter implements MouseListener {
     }
 
     @Override
-    public void mouseClicked(MouseEvent e) {
-
-    }
+    public void mouseClicked(MouseEvent e) {}
 
     @Override
     public void mousePressed(MouseEvent e) {
@@ -485,17 +596,11 @@ public class KeyInput extends KeyAdapter implements MouseListener {
     }
 
     @Override
-    public void mouseReleased(MouseEvent e) {
-
-    }
+    public void mouseReleased(MouseEvent e) {}
 
     @Override
-    public void mouseEntered(MouseEvent e) {
-
-    }
+    public void mouseEntered(MouseEvent e) {}
 
     @Override
-    public void mouseExited(MouseEvent e) {
-
-    }
+    public void mouseExited(MouseEvent e) {}
 }

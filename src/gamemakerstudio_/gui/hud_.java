@@ -133,8 +133,4 @@ public class hud_ {
         else tempMin = String.valueOf(minutes);
         return tempMin + ":" + tempSec + ":" + tempMilli;
     }
-    public hud_ (handler_ handler, game_ game) {
-        this.handler = handler;
-        this.game = game;
-    }
 }

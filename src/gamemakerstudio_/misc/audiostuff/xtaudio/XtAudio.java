@@ -10,7 +10,7 @@ import java.util.EnumSet;
 
 import static gamemakerstudio_.entities.experimental.betterosc_.*;
 
-public class XtAudio {
+public class XtAudio implements Runnable {
     // thread wait milli
     public static int milli = 1000000000;
     public static boolean run = false;
@@ -78,67 +78,92 @@ public class XtAudio {
     }
 
     public XtAudio(){
-        // this initializes platform dependent stuff like COM
-        try(XtPlatform platform = xt.audio.XtAudio.init(null, Pointer.NULL, null)) {
-            // works on windows only, obviously
-            XtService service = platform.getService(Enums.XtSystem.WASAPI);
-            // list input devices (this includes loopback)
-            try(XtDeviceList list = service.openDeviceList(EnumSet.of( Enums.XtEnumFlags.INPUT))) {
-                for(int i = 0; i < list.getCount(); i++) {
-                    String deviceId = list.getId(i);
-                    EnumSet<Enums.XtDeviceCaps> caps = list.getCapabilities(deviceId);
-                    // filter loopback devices
-                    if(caps.contains(Enums.XtDeviceCaps.LOOPBACK)) {
-                        String deviceName = list.getName(deviceId);
-                        // just to check what output we're recording
-                        System.out.println(deviceName);
-                        // open device
-                        try(XtDevice device = service.openDevice(deviceId)) {
-                            // 16 bit 48khz
-                            Structs.XtMix mix = new Structs.XtMix(48000, Enums.XtSample.INT16);
-                            // Structs.XtMix mix = new Structs.XtMix(44100, Enums.XtSample.INT16);
-                            // 2 channels input, no masking
-                            Structs.XtChannels channels = new Structs.XtChannels(2, 0, 0, 0);
-                            // final audio format
-                            Structs.XtFormat format = new Structs.XtFormat(mix, channels);
-                            // query min/max/default buffer sizes
-                            Structs.XtBufferSize bufferSize = device.getBufferSize(format);
-                            // true->interleaved, onBuffer->audio stream callback
-                            Structs.XtStreamParams streamParams = new Structs.XtStreamParams(true, XtAudio::onBuffer, null, null);
-                            // final initialization params with default buffer size
-                            Structs.XtDeviceStreamParams deviceParams = new Structs.XtDeviceStreamParams(streamParams, format, bufferSize.current);
-                            // run stream
-                            // safe buffer allows you to get java short[] instead on jna Pointer in the callback
-                            try(XtStream stream = device.openStream(deviceParams, null);
-                                var safeBuffer = XtSafeBuffer.register(stream, true)) {
-                                // max frames to enter onBuffer * channels * bytes per sample
-                                BUFFER = new byte[stream.getFrames() * 2 * 2];
-                                // DO NOT USE CODES BELOW!, THIS IS DESIGNED FOR RECORDING
-                                // make filename valid
-                                String fileName = deviceName.replaceAll("[\\\\/:*?\"<>|]", "");
-                                try(FileOutputStream fos0 = new FileOutputStream(fileName + ".raw")) {
-                                    // make filestream accessible to the callback
-                                    // could also be done by passsing as userdata to openStream
-                                    if (game_.recordAudio) fos = fos0;
-                                    // run for 1 second
-                                    stream.start();
-                                    // not xt audio stuff but ok
-                                    game_.doneLoadingCodes();
-                                    // noob fix
-                                    run = true;
-                                    System.out.println("==============================================================");
-                                    Thread.sleep(1000000000); // run this for 11.5740740741 days
-                                    System.out.println("this wasn't supposed to happen");
-                                    System.exit(1);
+        start();
+    }
+
+    Thread thread;
+    boolean running = false;
+
+    @Override
+    public void run() {
+        while (running) {
+            // this initializes platform dependent stuff like COM
+            try(XtPlatform platform = xt.audio.XtAudio.init(null, Pointer.NULL)) {
+                // works on windows only, obviously
+                XtService service = platform.getService(Enums.XtSystem.WASAPI);
+                // list input devices (this includes loopback)
+                try(XtDeviceList list = service.openDeviceList(EnumSet.of( Enums.XtEnumFlags.INPUT))) {
+                    for(int i = 0; i < list.getCount(); i++) {
+                        String deviceId = list.getId(i);
+                        EnumSet<Enums.XtDeviceCaps> caps = list.getCapabilities(deviceId);
+                        // filter loopback devices
+                        if(caps.contains(Enums.XtDeviceCaps.LOOPBACK)) {
+                            String deviceName = list.getName(deviceId);
+                            // just to check what output we're recording
+                            System.out.println(deviceName);
+                            // open device
+                            try(XtDevice device = service.openDevice(deviceId)) {
+                                // 16 bit 48khz
+                                Structs.XtMix mix = new Structs.XtMix(48000, Enums.XtSample.INT16);
+                                // Structs.XtMix mix = new Structs.XtMix(44100, Enums.XtSample.INT16);
+                                // 2 channels input, no masking
+                                Structs.XtChannels channels = new Structs.XtChannels(2, 0, 0, 0);
+                                // final audio format
+                                Structs.XtFormat format = new Structs.XtFormat(mix, channels);
+                                // query min/max/default buffer sizes
+                                Structs.XtBufferSize bufferSize = device.getBufferSize(format);
+                                // true->interleaved, onBuffer->audio stream callback
+                                Structs.XtStreamParams streamParams = new Structs.XtStreamParams(true, XtAudio::onBuffer, null, null);
+                                // final initialization params with default buffer size
+                                Structs.XtDeviceStreamParams deviceParams = new Structs.XtDeviceStreamParams(streamParams, format, bufferSize.current);
+                                // run stream
+                                // safe buffer allows you to get java short[] instead on jna Pointer in the callback
+                                try(XtStream stream = device.openStream(deviceParams, null);
+                                    XtSafeBuffer safeBuffer = XtSafeBuffer.register(stream, true)) {
+                                    // max frames to enter onBuffer * channels * bytes per sample
+                                    BUFFER = new byte[stream.getFrames() * 2 * 2];
+                                    // DO NOT USE CODES BELOW!, THIS IS DESIGNED FOR RECORDING
+                                    // make filename valid
+                                    String fileName = deviceName.replaceAll("[\\\\/:*?\"<>|]", "");
+                                    try(FileOutputStream fos0 = new FileOutputStream(fileName + ".raw")) {
+                                        // make filestream accessible to the callback
+                                        // could also be done by passsing as userdata to openStream
+                                        fos = fos0; // FIXME: this is illegal
+                                        // run for 1 second
+                                        stream.start();
+                                        // not xt audio stuff but ok
+                                        // moved at main game init
+                                        // game_.doneLoadingCodes();
+                                        // noob fix
+                                        run = true;
+                                        System.out.println("==============================================================");
+                                        Thread.sleep(1000000000); // run this for 11.5740740741 days
+                                        System.out.println("this wasn't supposed to happen");
+                                        System.exit(1);
+                                    }
                                 }
                             }
                         }
                     }
                 }
             }
+            catch (Exception exception){
+                exception.printStackTrace();
+            }
         }
-        catch (Exception exception){
-            exception.printStackTrace();
+    }
+
+    public synchronized void start() {
+        thread = new Thread(this);
+        thread.start();
+        running = true;
+    }
+    public synchronized void stop() {
+        try {
+            thread.join();
+            running = false;
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }

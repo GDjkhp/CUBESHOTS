@@ -53,7 +53,6 @@ public class lasergun_ extends gameobject_ {
             }
         }
         if (game_.sfx) audioplayer_.getSound("laser").play();
-
         // destroy automagically
         if (target != null){
             handler.removeObject(target);

@@ -24,8 +24,6 @@ public class raycast_ extends gameobject_ implements KeyListener {
         return r.nextInt(bounds);
     }
 
-    game_ game;
-
     public raycast_(float x, float y, ID id, game_ game) {
         super(x, y, id);
         walls = new Boundary[5+4];
@@ -41,7 +39,6 @@ public class raycast_ extends gameobject_ implements KeyListener {
         walls[walls.length-2] = (new Boundary(game_.WIDTH, game_.HEIGHT, 0, game_.HEIGHT));
         walls[walls.length-1] = (new Boundary(0, game_.HEIGHT, 0, 0));
         particle = new Particle();
-        this.game = game;
         game.addKeyListener(this);
     }
 

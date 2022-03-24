@@ -216,11 +216,11 @@ public class ImageProcessing {
                         // Color.white, Color.green // and white with green
 
                         Color.RED,      Color.MAGENTA,
-                        Color.ORANGE,   Color.BLUE,
-                        Color.YELLOW,   Color.CYAN,
-                        Color.GREEN,    Color.GREEN,
-                        Color.CYAN,     Color.YELLOW,
-                        Color.BLUE,     Color.ORANGE,
+                        Color.ORANGE,   Color.YELLOW,
+                        Color.YELLOW,   Color.ORANGE,
+                        //Color.GREEN,    Color.GREEN,
+                        Color.CYAN,     Color.BLUE,
+                        Color.BLUE,     Color.CYAN,
                         Color.MAGENTA,  Color.RED,
 
                         Color.BLACK, Color.WHITE,

@@ -4,9 +4,13 @@ import gamemakerstudio_.game_;
 import gamemakerstudio_.misc.entitystuff.ID;
 import gamemakerstudio_.misc.entitystuff.gameobject_;
 
+import javax.imageio.ImageIO;
 import javax.swing.Timer;
 import java.awt.*;
 import java.awt.event.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.util.*;
 
 public class pathfinder_ extends gameobject_ {
@@ -16,25 +20,26 @@ public class pathfinder_ extends gameobject_ {
     // e == end
     // c == reset path
     // BACKSPACE == reset everything
-    // SPACE == play/pause
+    // ENTER == play/pause (default was SPACE)
     // w + click == create wall, fix this
     // d + click == delete wall, fix this
 
     Controller controller;
     game_ game;
-    public static final int NODE_SIZE = 20; // default is 25
+    public static final int NODE_SIZE = 7; // default is 25, user default is 20
+    private static final int WIDTH = game_.WIDTH; // default is 750
+    private static final int HEIGHT = game_.HEIGHT; // default is 750
     int delay = 10;
 
     public pathfinder_(float x, float y, ID id, game_ game) {
         super(x, y, id);
         this.game = game;
         controller = new Controller();
+        // png2MazeParser();
     }
 
     @Override
-    public void tick() {
-
-    }
+    public void tick() {}
 
     @Override
     public void render(Graphics g) {
@@ -375,8 +380,8 @@ public class pathfinder_ extends gameobject_ {
                     }
 
                     //checks if node is within canvas boundary
-                    if(xCoord < 0 || yCoord < 0 || xCoord >= game_.WIDTH || yCoord >=
-                            game_.HEIGHT) {
+                    if(xCoord < 0 || yCoord < 0 || xCoord >= WIDTH || yCoord >=
+                            HEIGHT) {
                         continue;
                     }
 
@@ -447,7 +452,7 @@ public class pathfinder_ extends gameobject_ {
 
     public class Controller implements ActionListener,
             MouseListener, KeyListener, MouseMotionListener {
-        private PathFinder path;
+        public PathFinder path;
 
         private Timer timer;
 
@@ -457,9 +462,6 @@ public class pathfinder_ extends gameobject_ {
         private char keyPress;
         private boolean isOctile;
         private boolean isManhattan;
-
-        private static final int WIDTH = 750;
-        private static final int HEIGHT = 750;
 
         public Controller(){
             isOctile = true;
@@ -476,8 +478,8 @@ public class pathfinder_ extends gameobject_ {
         public void paint(Graphics g) {
             //Draw grid for pathfind
             g.setColor(Color.lightGray);
-            for(int j = 0; j < game_.HEIGHT; j += NODE_SIZE) {
-                for(int i = 0; i < game_.WIDTH; i += NODE_SIZE) {
+            for(int j = 0; j < HEIGHT; j += NODE_SIZE) {
+                for(int i = 0; i < WIDTH; i += NODE_SIZE) {
 
                     g.setColor(new Color(40, 42, 54));
                     g.fillRect(i, j, NODE_SIZE, NODE_SIZE);
@@ -556,7 +558,7 @@ public class pathfinder_ extends gameobject_ {
 
             switch(keyPress){
 
-                case KeyEvent.VK_SPACE:
+                case KeyEvent.VK_ENTER:
                     //start algorithm or stop it
                     //set start and end node for path
                     //on first run, set start and end; do again when finish algorithm
@@ -922,6 +924,33 @@ public class pathfinder_ extends gameobject_ {
             }
 
             return false;
+        }
+    }
+
+    public void png2MazeParser(){
+        try {
+            BufferedImage png = ImageIO.read(new File("C:\\Users\\ACER\\Downloads\\now it works transparent fixed human error.png"));
+            int width = png.getWidth();
+            int height = png.getHeight();
+            int[] arrayOfColors = new int[width*height];
+            for (int y = 0; y < height; y++) {
+                for (int x = 0; x < width; x++) {
+                    int getColor = png.getRGB(x, y);
+                    arrayOfColors[x+y*width] = getColor;
+                    if (getColor == -16777216){
+                        int mouseX = x * NODE_SIZE;
+                        int mouseY = y * NODE_SIZE;
+                        int xOver = mouseX % NODE_SIZE;
+                        int yOver = mouseY % NODE_SIZE;
+                        //create walls and add to wall list
+                        Node tmpWall = new Node(mouseX - xOver, mouseY - yOver);
+                        controller.path.addWall(new Point(tmpWall.getX(), tmpWall.getY()));
+                    }
+                }
+            }
+            System.out.println(Arrays.toString(arrayOfColors));
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 

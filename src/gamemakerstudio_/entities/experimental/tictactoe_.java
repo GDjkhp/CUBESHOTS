@@ -22,8 +22,6 @@ public class tictactoe_ extends gameobject_ implements MouseListener {
     // canvas
     int w = 300 / 3;
     int h = 300 / 3;
-    // class
-    game_ game;
 
     public enum gameState {
         P1WON, P2WON, TIE
@@ -34,7 +32,6 @@ public class tictactoe_ extends gameobject_ implements MouseListener {
     // FIXME: killing and then making a new instance makes a false conclusion
     public tictactoe_(float x, float y, ID id, game_ game) {
         super(x, y, id);
-        this.game = game;
         board = new String[3][3];
         isAvailable = new boolean[3][3];
         game.addMouseListener(this);

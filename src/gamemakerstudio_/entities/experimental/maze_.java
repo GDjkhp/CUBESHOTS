@@ -34,9 +34,6 @@ public class maze_ extends gameobject_ implements KeyListener {
     // createAndShowGui codes
     MazeGridPanel grid;
 
-    // for input
-    game_ game;
-
     // switch if running
     public static boolean running = false;
 
@@ -49,8 +46,7 @@ public class maze_ extends gameobject_ implements KeyListener {
 
         grid = new MazeGridPanel(rows, cols);
 
-        // two lines of code, FOR INPUT
-        this.game = game;
+        // one lines of code, FOR INPUT
         game.addKeyListener(this);
     }
 

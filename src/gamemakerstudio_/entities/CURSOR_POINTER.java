@@ -9,22 +9,21 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
 
+import static gamemakerstudio_.game_.HEIGHT;
+import static gamemakerstudio_.game_.WIDTH;
+
 public class CURSOR_POINTER extends gameobject_ implements MouseMotionListener {
-    game_ game;
     int dispX, dispY;
     Rectangle boundLimit = new Rectangle(50, 40, 570, 660);
     public CURSOR_POINTER(float x, float y, ID id, game_ game) {
         super(x, y, id);
-        this.game = game;
         width = 32;
         height = 32;
         game.addMouseMotionListener(this);
     }
 
     @Override
-    public void tick() {
-
-    }
+    public void tick() {}
 
     @Override
     public void render(Graphics g) {
@@ -32,8 +31,8 @@ public class CURSOR_POINTER extends gameobject_ implements MouseMotionListener {
         g.setColor(Color.CYAN);
 
         // trash codes
-        if(dispX >= 620){
-            if (dispY >= 680) {
+        if(dispX >= WIDTH - 60){
+            if (dispY >= HEIGHT - 40) {
                 // bottom right, dispX = 620, dispY = 680
                 g.drawString("x = " + dispX, (int)x - 35, (int)y - 15);
                 g.drawString("y = " + dispY, (int)x - 35, (int)y - 0);
@@ -43,7 +42,7 @@ public class CURSOR_POINTER extends gameobject_ implements MouseMotionListener {
                 g.drawString("y = " + dispY, (int)x - 35, (int)y + 50);
             }
         }
-        else if (dispY >= 680){
+        else if (dispY >= HEIGHT - 40){
             // lower left, dispX = 50, dispY = 680
             g.drawString("x = " + dispX, (int)x + 35, (int)y - 15);
             g.drawString("y = " + dispY, (int)x + 35, (int)y - 0);
@@ -61,9 +60,7 @@ public class CURSOR_POINTER extends gameobject_ implements MouseMotionListener {
     } // todo: bounds is null
 
     @Override
-    public void mouseDragged(MouseEvent e) {
-
-    }
+    public void mouseDragged(MouseEvent e) {}
 
     @Override
     public void mouseMoved(MouseEvent e) {

@@ -37,22 +37,24 @@ public class camera_ extends gameobject_ implements KeyListener {
     }
 
     public int xTemp = 0, yTemp = 0;
-    int pixels = 1;
+    int pixels = 50;
 
     @Override
     public void keyPressed(KeyEvent e) {
         int key = e.getKeyCode();
-        if (key == KeyEvent.VK_LEFT)
-            xTemp += -pixels;
-        if (key == KeyEvent.VK_RIGHT)
-            xTemp += pixels;
-        if (key == KeyEvent.VK_UP)
-            yTemp += -pixels;
-        if (key == KeyEvent.VK_DOWN)
-            yTemp += pixels;
-        // no
+        if (!game.multiplayer) {
+            if (key == KeyEvent.VK_LEFT)
+                xTemp += -pixels;
+            if (key == KeyEvent.VK_RIGHT)
+                xTemp += pixels;
+            if (key == KeyEvent.VK_UP)
+                yTemp += -pixels;
+            if (key == KeyEvent.VK_DOWN)
+                yTemp += pixels;
+            // no
 //        game.getGameCamera().move(x, y);
-        game.cameraControls(xTemp, yTemp, 1, 1);
+            game.cameraControls(xTemp, yTemp, 1, 1);
+        }
     }
 
     @Override

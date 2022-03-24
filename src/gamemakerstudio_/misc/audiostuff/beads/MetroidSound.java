@@ -2,6 +2,7 @@ package gamemakerstudio_.misc.audiostuff.beads;
 
 import net.beadsproject.beads.core.AudioContext;
 import net.beadsproject.beads.core.Bead;
+import net.beadsproject.beads.core.io.JavaSoundAudioIO;
 import net.beadsproject.beads.data.Buffer;
 import net.beadsproject.beads.data.Pitch;
 import net.beadsproject.beads.events.KillTrigger;
@@ -12,8 +13,9 @@ public class MetroidSound {
     public static void main(String[] args) {
 
         final AudioContext ac;
-
-        ac = new AudioContext();
+        JavaSoundAudioIO io = new JavaSoundAudioIO();
+        io.selectMixer(2);
+        ac = new AudioContext(io);
         /*
          * In this example a Clock is used to trigger events. We do this by
          * adding a listener to the Clock (which is of type Bead).

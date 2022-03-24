@@ -48,7 +48,9 @@ public enum ID {
 
     CURSORSELECT, CURSOR,
     Trail,
-    Spicy,
+    ParticleHandler,
+    Spicy, SpicyCovid,
+    Spicy3D, SpicyTerrain,
 
     HeartFriend,
     GHOST,
@@ -69,6 +71,7 @@ public enum ID {
     TriangleShooter,
     MoreSmarter,
     Spikes,
+
     // bosses
     CrazyBoss,
     Xgamer,

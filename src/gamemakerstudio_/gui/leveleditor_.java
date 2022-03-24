@@ -6,10 +6,8 @@ import gamemakerstudio_.misc.entitystuff.handler_;
 import java.awt.*;
 
 public class leveleditor_ {
-    game_ game;
     handler_ handler;
     public leveleditor_(game_ game, handler_ handler){
-        this.game = game;
         this.handler = handler;
     }
     public void tick(){

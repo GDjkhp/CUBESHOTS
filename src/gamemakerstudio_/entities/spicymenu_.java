@@ -5,6 +5,7 @@
  */
 package gamemakerstudio_.entities;
 
+import gamemakerstudio_.entities.particle.trail_;
 import gamemakerstudio_.game_;
 import gamemakerstudio_.misc.entitystuff.ID;
 import gamemakerstudio_.misc.entitystuff.gameobject_;
@@ -39,7 +40,7 @@ public class spicymenu_ extends gameobject_ {
             velY = 5;
         }
         
-        color = new Color(r.nextInt(255), r.nextInt(255), r.nextInt(255));
+        color = new Color(r.nextInt(256), r.nextInt(256), r.nextInt(256));
 
     }
     

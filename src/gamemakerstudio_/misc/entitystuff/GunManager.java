@@ -33,6 +33,8 @@ public class GunManager {
                 return GUN.Rocket;
             case Rocket:
                 return GUN.Lasergun;
+            case Lasergun:
+                return GUN.Arkhalis;
             default:
                 return GUN.Default;
         }
@@ -100,6 +102,8 @@ public class GunManager {
                 handler.addObject(new lasergun_(x + 15, y + 15, ID.LasergunP2, handler));
             }
         }
-
+        // arkhalis
+        if (current == GUN.Arkhalis)
+            handler.addObject(new arkhalis_(x, y, ID.Arkhalis, handler));
     }
 }

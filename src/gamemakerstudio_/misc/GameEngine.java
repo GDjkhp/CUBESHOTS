@@ -5,7 +5,7 @@ import gamemakerstudio_.game_;
 import javax.swing.*;
 import java.awt.*;
 
-public class GameEngine extends Canvas implements Runnable {
+public abstract class GameEngine extends Canvas implements Runnable {
 
     // game loop variables
     public Thread thread;
@@ -137,8 +137,8 @@ public class GameEngine extends Canvas implements Runnable {
             e.printStackTrace();
         }
     }
-    public void tick(){}
-    public void render(){}
+    public abstract void tick();
+    public abstract void render();
     // TODO: MERGE EVERY ERROR HANDLER HERE
     public void handleError(Exception e) {
         e.printStackTrace();

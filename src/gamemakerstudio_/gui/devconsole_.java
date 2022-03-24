@@ -58,7 +58,6 @@ public class devconsole_ extends JFrame implements ActionListener, KeyListener {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         // Adding the listeners to components..
-        submit.addActionListener(this);
         console_text.addKeyListener(this);
         add(panel);
         setTitle("Developer Console");
@@ -125,24 +124,56 @@ public class devconsole_ extends JFrame implements ActionListener, KeyListener {
                     game_.metronomeSounds = !game_.metronomeSounds;
                     updateConsole(now + ": Metronome Sounds " + game_.metronomeSounds);
                     break;
-                case "sound":
+                case "music":
                     if (game_.music) {
                         game_.music = false;
-                        game_.sfx = false;
-                        audioplayer_.getSound("null").play();
                         audioplayer_.getMusic("null").play(); // library change error
+                        audioplayer_.stopRandomGenMusic(); // library change error
                     }
                     else {
                         game_.music = true;
-                        game_.sfx = true;
                         // weird fix while in-game
                         if (game_.gameState == STATE.GameBeta) {
                             game_.gameState = STATE.Load;
                             game.levels.levelsList(game.levels.mx, game.levels.my);
                         }
-                        else audioplayer_.getMusic("music").loop(); // library change error
+                        // else audioplayer_.getMusic("music").loop(); // library change error
+                        else audioplayer_.playRandomGenMusic(); // library change error
                     }
-                    updateConsole(now + ": Sound " + game_.music);
+                    updateConsole(now + ": Music " + game_.music);
+                    break;
+                case "sfx":
+                    if (game_.music) {
+                        game_.sfx = false;
+                        audioplayer_.getSound("null").play();
+                    }
+                    else {
+                        game_.sfx = true;
+                        audioplayer_.getSound("click_sound").play();
+                    }
+                    updateConsole(now + ": SFX " + game_.sfx);
+                    break;
+                case "allSound":
+                    if (game_.music) {
+                        game_.music = false;
+                        game_.sfx = false;
+                        audioplayer_.getSound("null").play();
+                        audioplayer_.getMusic("null").play(); // library change error
+                        audioplayer_.stopRandomGenMusic(); // library change error
+                    }
+                    else {
+                        game_.music = true;
+                        game_.sfx = true;
+                        audioplayer_.getSound("click_sound").play();
+                        // weird fix while in-game
+                        if (game_.gameState == STATE.GameBeta) {
+                            game_.gameState = STATE.Load;
+                            game.levels.levelsList(game.levels.mx, game.levels.my);
+                        }
+                        // else audioplayer_.getMusic("music").loop(); // library change error
+                        else audioplayer_.playRandomGenMusic(); // library change error
+                    }
+                    updateConsole(now + ": Music and SFX " + game_.music);
                     break;
                 case "ai":
                     if (tokens.get(1).equals("p1")) {
@@ -180,12 +211,12 @@ public class devconsole_ extends JFrame implements ActionListener, KeyListener {
                     game_.gameState = STATE.Load;
                     updateConsole(now + ": Forced Load Screen");
                     break;
-                case "music":
+                case "playMusic":
                     if (game_.music)
                         audioplayer_.getMusic(tokens.get(1)).play();
                     else updateConsole("Syntax error: Couldn't play " + tokens.get(1) + ", MUSIC is FALSE!");
                     break;
-                case "sfx":
+                case "playSfx":
                     if (game_.sfx)
                         audioplayer_.getSound(tokens.get(1)).play();
                     else updateConsole("Syntax error: Couldn't play " + tokens.get(1) + ", SFX is FALSE!");

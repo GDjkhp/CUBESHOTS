@@ -5,6 +5,7 @@
  */
 package gamemakerstudio_.entities;
 
+import gamemakerstudio_.entities.particle.trail_;
 import gamemakerstudio_.game_;
 import gamemakerstudio_.misc.entitystuff.ID;
 import gamemakerstudio_.misc.entitystuff.gameobject_;
@@ -31,7 +32,6 @@ public class basicenemy_ extends gameobject_ {
         this.velY = 5;
         color = Color.RED;
     }
-    
 
     public Rectangle getBounds() {
         return new Rectangle((int) x, (int) y, width, height);

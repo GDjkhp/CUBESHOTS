@@ -23,7 +23,6 @@ public class shop_ extends MouseAdapter {
     handler_ handler;
     hud_ hud;
     hud2_ hud2;
-    game_ game;
     
     public static int B1 = 0;
     public static int B2 = 0;
@@ -36,7 +35,6 @@ public class shop_ extends MouseAdapter {
         this.handler = handler;
         this.hud = hud;
         this.hud2 = hud2;
-        this.game = game;
         game.addMouseListener(this);
     }
     public void render (Graphics g) {
@@ -104,7 +102,7 @@ public class shop_ extends MouseAdapter {
         }
     }
     public void mouseReleased(MouseEvent e) {
-        if (game.gameState == STATE.Shop) {
+        if (game_.gameState == STATE.Shop) {
             int mx = e.getX();
             int my = e.getY();
             // box 1

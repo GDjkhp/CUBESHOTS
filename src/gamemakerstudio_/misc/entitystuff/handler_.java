@@ -91,7 +91,7 @@ public class handler_ {
             tempObject.tick();
         }
         // test
-        sortingAlgorithm();
+        if (!game_.ldm) sortingAlgorithm();
     }
     public void render(Graphics g) {
         for (int i = 0; i < object.size(); i++/*int i = object.size() - 1; i >= 0; i--*/) {
@@ -120,6 +120,27 @@ public class handler_ {
             addObject(new RangeArea(0, 0, ID.P2Range, this));
         }
     }
+
+    // music stuff, i dunno why is this here
+    public void metronomeCode () {
+        // metronome codes
+        if (fourbarticks == 4) fourbarticks = 0;
+        fourbarticks++;
+        total_beats++;
+        if (fourbarticks == 1) {
+            total_bars++;
+            if (game_.metronomeSounds) audioplayer_.getSound("first_tick").play();
+        } else if (game_.metronomeSounds) audioplayer_.getSound("tick").play();
+    }
+    public void stepsBeta() {
+        if (fourbarsteps == 16) fourbarsteps = 0;
+        fourbarsteps++;
+        total_steps++;
+        if (fourbarsteps == 1) {
+            total_bars_steps++;
+        }
+    }
+
     // reset everything except players
     // do not kill players using these, see devconsole_ removeEntities
     public void removeObjectsExceptPlayers() {
@@ -161,28 +182,7 @@ public class handler_ {
         }
     }
 
-
-
-    // music stuff, i dunno why is this here
-    public void metronomeCode () {
-        // metronome codes
-        if (fourbarticks == 4) fourbarticks = 0;
-        fourbarticks++;
-        total_beats++;
-        if (fourbarticks == 1) {
-            total_bars++;
-            if (game_.metronomeSounds) audioplayer_.getSound("first_tick").play();
-        } else if (game_.metronomeSounds) audioplayer_.getSound("tick").play();
-    }
-    public void stepsBeta() {
-        if (fourbarsteps == 16) fourbarsteps = 0;
-        fourbarsteps++;
-        total_steps++;
-        if (fourbarsteps == 1) {
-            total_bars_steps++;
-        }
-    }
-
+    // add and remove entities
     public gameobject_ addObject(gameobject_ object) {
         // modified for optimization, trails
         if (optimize){
@@ -195,8 +195,6 @@ public class handler_ {
 
         // linkedlist
         gameobject_ tempObject = this.object.getLast();
-
-
 
         // System.out.println("Successfully added " + object + " with ID of " + object.getId() + " at " + object.getX() + ", " + object.getY());
 

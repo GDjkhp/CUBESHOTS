@@ -36,13 +36,13 @@ public class rendertexture_ extends gameobject_ {
 
     @Override
     public void tick() {
-
+        // render = software();
     }
 
     @Override
     public void render(Graphics g) {
         try {
-//            render = hardware();
+            // render = hardware();
             render = software();
         } catch (Exception e) {
             e.printStackTrace();

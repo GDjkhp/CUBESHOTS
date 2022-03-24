@@ -15,7 +15,6 @@ import java.util.Random;
 
 public class bullethellgenerator_ extends gameobject_ implements KeyListener, MouseListener, ActionListener {
     handler_ handler;
-    game_ game;
 
     int defaultSpawnTimer;
     Random r = new Random();
@@ -80,7 +79,6 @@ public class bullethellgenerator_ extends gameobject_ implements KeyListener, Mo
 
         // init classes
         this.handler = handler;
-        this.game = game;
 
         // init local vars
         this.defaultSpawnTimer = spawnTimer;
@@ -144,7 +142,15 @@ public class bullethellgenerator_ extends gameobject_ implements KeyListener, Mo
         // init input
         game.addKeyListener(this);
         game.addMouseListener(this);
-        OK.addActionListener(this);
+
+        st.addActionListener(this);
+        np.addActionListener(this);
+        ps.addActionListener(this);
+        sr.addActionListener(this);
+        msr.addActionListener(this);
+        sm.addActionListener(this);
+        is.addActionListener(this);
+        to.addActionListener(this);
 
         // summon base
         handler.addObject(new basecircle_(this.x, this.y, ID.BASECIRCLEGHOST, handler, 0, 0, 0));
@@ -171,6 +177,7 @@ public class bullethellgenerator_ extends gameobject_ implements KeyListener, Mo
                 // TODO: direction and curve, tbd
                 // where's the god damn code???
 
+                // spawn bullets
                 handler.addObject(new circlewithpatterns_((int) projectileDirXPosition, (int) projectileDirYPosition,
                         ID.CircleWithPatterns, handler, (float)projectileMoveDirectionX, (float)projectileMoveDirectionY));
                 angle += angleStep;
@@ -220,9 +227,7 @@ public class bullethellgenerator_ extends gameobject_ implements KeyListener, Mo
     }
 
     @Override
-    public void render(Graphics g) {
-
-    }
+    public void render(Graphics g) {}
 
     @Override
     public Rectangle getBounds() {
@@ -230,9 +235,7 @@ public class bullethellgenerator_ extends gameobject_ implements KeyListener, Mo
     }
 
     @Override
-    public void keyTyped(KeyEvent e) {
-
-    }
+    public void keyTyped(KeyEvent e) {}
 
     @Override
     public void keyPressed(KeyEvent e) {
@@ -243,9 +246,7 @@ public class bullethellgenerator_ extends gameobject_ implements KeyListener, Mo
     }
 
     @Override
-    public void keyReleased(KeyEvent e) {
-
-    }
+    public void keyReleased(KeyEvent e) {}
 
     @Override
     public void mouseClicked(MouseEvent e) {
@@ -257,24 +258,16 @@ public class bullethellgenerator_ extends gameobject_ implements KeyListener, Mo
     }
 
     @Override
-    public void mousePressed(MouseEvent e) {
-
-    }
+    public void mousePressed(MouseEvent e) {}
 
     @Override
-    public void mouseReleased(MouseEvent e) {
-
-    }
+    public void mouseReleased(MouseEvent e) {}
 
     @Override
-    public void mouseEntered(MouseEvent e) {
-
-    }
+    public void mouseEntered(MouseEvent e) {}
 
     @Override
-    public void mouseExited(MouseEvent e) {
-
-    }
+    public void mouseExited(MouseEvent e) {}
 
     @Override
     public void actionPerformed(ActionEvent e) {

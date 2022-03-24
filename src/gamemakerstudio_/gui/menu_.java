@@ -105,11 +105,13 @@ public class menu_ implements KeyListener, MouseMotionListener, MouseListener {
                         game_.sfx = false;
                         audioplayer_.getSound("null").play();
                         audioplayer_.getMusic("null").play(); // library change error
+                        audioplayer_.stopRandomGenMusic(); // library change error
                     }
                     else {
                         game_.music = true;
                         game_.sfx = true;
-                        audioplayer_.getMusic("music").loop(); // library change error
+                        // audioplayer_.getMusic("music").loop(); // library change error
+                        audioplayer_.playRandomGenMusic(); // library change error
                     }
 
                     if (game_.sfx) audioplayer_.getSound("click_sound").play();
@@ -189,7 +191,9 @@ public class menu_ implements KeyListener, MouseMotionListener, MouseListener {
                 game.gameState = STATE.Menu;
                 if (game_.sfx) audioplayer_.getSound("click_sound").play();
                 if (game_.music) {
-                    audioplayer_.getMusic("music").loop(); // library change error
+                    // audioplayer_.getMusic("music").loop(); // library change error
+                    audioplayer_.getMusic("null").play();
+                    audioplayer_.playRandomGenMusic(); // library change error
                 }
             }
         }
