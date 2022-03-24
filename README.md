@@ -34,7 +34,7 @@ Java 8: https://www.java.com/en/download/
 
 Slick2D: https://slick.ninjacave.com/
 
-Xt-Audio: https://sjoerdvankreel.github.io/xt-audio/
+XT-Audio: https://sjoerdvankreel.github.io/xt-audio/
 
 Beads: http://www.beadsproject.net/
 
@@ -128,6 +128,8 @@ Player 2:
 * Shaders = F9
 
 * Camera (when not in multiplayer) = UP, LEFT, DOWN, RIGHT (Arrow keys)
+
+* Random splash = F4
 
 # FAQs
 1. Mobile when?
