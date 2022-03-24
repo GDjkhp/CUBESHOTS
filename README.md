@@ -127,27 +127,29 @@ Player 2:
 
 * Shaders = F9
 
+* Camera (when not in multiplayer) = UP, LEFT, DOWN, RIGHT (Arrow keys)
+
 # FAQs
 1. Mobile when?
 
-A: soon >:)
+	A: soon >:)
 
 2. Mobile when??
 
-A: libgdx + unity3d was irritating as hell!!
+	A: libgdx + unity3d was irritating as hell!!
 
 3. Another game?
 
-A: yes, i am confirming Beginning Words! a word puzzle game hahaha!
+	A: yes, i am confirming Beginning Words! a word puzzle game hahaha!
 
 4. Another game??
 
-A: yes, i am confirming an unnamed 2.5D rpg sandbox game.
+	A: yes, i am confirming an unnamed 2.5D rpg sandbox game.
 
 5. Another game???
 
-A: yes, i am confirming an unnamed platformer game.
+	A: yes, i am confirming an unnamed platformer game.
 
 6. Another game????
 
-A: yes, i am confirming ports from my old games, rng and color game.
+	A: yes, i am confirming ports from my old games, rng and color game.
